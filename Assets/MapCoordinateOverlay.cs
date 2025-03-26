@@ -1,177 +1,254 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System;
+using System.Collections.Generic;
 
+/// <summary>
+/// Demonstrates using multiple nearest grid points for an IDW interpolation
+/// so that your test marker can smoothly position itself between grid markers.
+/// </summary>
 public class MapCoordinateOverlay : MonoBehaviour
 {
-    [Header("Map & Marker References")]
+    [Header("Marker & Parent")]
+    public GameObject markerPrefab;
     public RectTransform mapContent;
-    public RectTransform markerPrefab;
 
-    [Header("Map Corner Coordinates (Real World in Degrees)")]
-    public Vector2 topLeftLatLon = new Vector2(63.46134f, 10.28052f);     // NW corner
-    public Vector2 topRightLatLon = new Vector2(63.46134f, 10.64514f);    // NE corner
-    public Vector2 bottomLeftLatLon = new Vector2(63.35814f, 10.28052f);  // SW corner
-    public Vector2 bottomRightLatLon = new Vector2(63.35814f, 10.64514f); // SE corner
+    [Header("JSON Grid Data")]
+    public TextAsset jsonFile;
 
-    [Header("Map Corner UI Positions")]
-    public Vector2 topLeftAnchoredPos = new Vector2(-500f, 500f);
-    public Vector2 topRightAnchoredPos = new Vector2(500f, 500f);
-    public Vector2 bottomLeftAnchoredPos = new Vector2(-500f, -500f);
-    public Vector2 bottomRightAnchoredPos = new Vector2(500f, -500f);
+    [Header("Show Grid (Optional)")]
+    public bool showGrid = false;
+    public int gridStep = 10; // skip some for visualization
+
+    [Header("Inverse Distance Weighting Settings")]
+    [Tooltip("Number of neighbors to use for IDW interpolation.")]
+    public int kNeighbors = 4;
+
+    [Tooltip("Power parameter for IDW. 1=linear, 2=square, etc.")]
+    public float distancePower = 1f;
 
     [Header("Test Marker Settings")]
-    public bool testMarkerOnStart = true;
-    public float testMarkerLat = 63.41192f;
-    public float testMarkerLon = 10.40953f;
+    public bool placeTestMarker = true;
+    public float testLat = 63.4f;
+    public float testLon = 10.4f;
 
-    [Header("Debug")]
-    public bool showDebugInfo = true;
-    public bool addTestGridMarkers = false;
-    public int gridDensity = 5;
+    // The corners for top-left, top-right, bottom-left, bottom-right
+    // normalizedX=0 => x=-48, normalizedX=1 => x=16813
+    // normalizedY=0 => y=48,  normalizedY=1 => y=-12276
+    private float leftX = -48f;
+    private float rightX = 16813f;
+    private float topY = 48f;
+    private float bottomY = -12276f;
 
-    private void Start()
+    private MapData mapData;
+
+    void Start()
     {
-        if (addTestGridMarkers)
+        // 1) Load grid from JSON
+        LoadMapData();
+
+        // 2) Optionally display all grid points
+        if (showGrid)
         {
-            AddTestGrid();
+            PlaceAllGridMarkers();
         }
 
-        if (testMarkerOnStart)
+        // 3) Optionally place a test marker at lat/lon using IDW
+        if (placeTestMarker)
         {
-            PlaceMarkerAtLatLon(testMarkerLat, testMarkerLon);
+            PlaceMarkerAtLatLon(testLat, testLon);
+            Debug.Log($"Placed test marker at lat={testLat}, lon={testLon}");
         }
     }
 
-    public RectTransform PlaceMarkerAtLatLon(float lat, float lon)
+    private void LoadMapData()
     {
-        Vector2 anchoredPos = LatLonToMapAnchoredPos(lat, lon);
-
-        if (showDebugInfo)
+        if (jsonFile == null)
         {
-            Debug.Log($"Placing marker at Lat/Lon: ({lat}, {lon}) → UI pos: {anchoredPos}");
+            Debug.LogError("No JSON file assigned!");
+            return;
         }
 
-        RectTransform marker = Instantiate(markerPrefab, mapContent);
-        marker.anchoredPosition = anchoredPos;
-        marker.SetAsLastSibling();
-
-        Canvas markerCanvas = marker.GetComponent<Canvas>();
-        if (markerCanvas == null)
+        mapData = JsonUtility.FromJson<MapData>(jsonFile.text);
+        if (mapData == null || mapData.grid == null)
         {
-            markerCanvas = marker.gameObject.AddComponent<Canvas>();
+            Debug.LogError("JSON data invalid or no 'grid' array found!");
+            return;
         }
-        markerCanvas.overrideSorting = true;
-        markerCanvas.sortingOrder = 100;
 
-        return marker;
+        Debug.Log($"Loaded {mapData.grid.Length} grid points from JSON.");
     }
 
     /// <summary>
-    /// Converts geographical coordinates to UI position using bilinear interpolation of all four corners.
-    /// This handles non-uniform distortion in maps.
+    /// Places a marker at the lat/lon by IDW interpolation of the k nearest grid points.
     /// </summary>
-    private Vector2 LatLonToMapAnchoredPos(float lat, float lon)
+    public void PlaceMarkerAtLatLon(float lat, float lon)
     {
-        // Normalize the input coordinates within the map's bounds (0-1 range)
-        float latRange = topLeftLatLon.x - bottomLeftLatLon.x;
-        float lonRange = topRightLatLon.y - topLeftLatLon.y;
+        if (mapData == null || mapData.grid == null)
+        {
+            Debug.LogError("No grid data loaded!");
+            return;
+        }
 
-        // Make sure we're handling the correct direction of latitude (higher is north)
-        float latNorm = (lat - bottomLeftLatLon.x) / latRange;
-        float lonNorm = (lon - topLeftLatLon.y) / lonRange;
+        // 1) Get the k nearest neighbors in lat/lon space
+        List<GridPoint> neighbors = FindKClosestNeighbors(lat, lon, kNeighbors);
 
-        // Clamp values to ensure they're within the map bounds
-        latNorm = Mathf.Clamp01(latNorm);
-        lonNorm = Mathf.Clamp01(lonNorm);
+        // 2) Do IDW to find final normalized (x,y)
+        Vector2 norm = InverseDistanceWeightedNormalized(lat, lon, neighbors, distancePower);
 
-        // Bilinear interpolation for both x and y positions
-        Vector2 topInterpolated = Vector2.Lerp(topLeftAnchoredPos, topRightAnchoredPos, lonNorm);
-        Vector2 bottomInterpolated = Vector2.Lerp(bottomLeftAnchoredPos, bottomRightAnchoredPos, lonNorm);
+        // 3) Convert to Unity coords
+        Vector2 unityPos = ConvertNormalizedToUnity(norm.x, norm.y);
 
-        // Final vertical interpolation between top and bottom
-        Vector2 finalPos = Vector2.Lerp(bottomInterpolated, topInterpolated, latNorm);
-
-        return finalPos;
+        // 4) Instantiate the marker
+        Debug.Log($"IDW => lat={lat}, lon={lon} => norm=({norm.x:F3},{norm.y:F3}), unity=({unityPos.x:F1},{unityPos.y:F1})");
+        InstantiateMarker(unityPos);
     }
 
     /// <summary>
-    /// Converts UI position to geographical coordinates using inverse bilinear interpolation
+    /// Finds the k nearest neighbors in lat/lon space from the grid.
     /// </summary>
-    public Vector2 MapAnchoredPosToLatLon(Vector2 anchoredPos)
+    private List<GridPoint> FindKClosestNeighbors(float lat, float lon, int k)
     {
-        // Find the horizontal lines for the y-coordinate
-        float topDist = DistancePointToLine(anchoredPos, topLeftAnchoredPos, topRightAnchoredPos);
-        float bottomDist = DistancePointToLine(anchoredPos, bottomLeftAnchoredPos, bottomRightAnchoredPos);
-        float totalDist = topDist + bottomDist;
+        // We'll store (distance, gridPoint) pairs, then sort by distance.
+        List<(float distSq, GridPoint gp)> distList = new List<(float, GridPoint)>(mapData.grid.Length);
 
-        // Vertical interpolation factor
-        float latNorm = totalDist > 0 ? bottomDist / totalDist : 0;
-
-        // Find the longitude using interpolation on the correct horizontal line
-        Vector2 leftSidePos = Vector2.Lerp(bottomLeftAnchoredPos, topLeftAnchoredPos, latNorm);
-        Vector2 rightSidePos = Vector2.Lerp(bottomRightAnchoredPos, topRightAnchoredPos, latNorm);
-
-        float lonNorm = InverseLerp(leftSidePos, rightSidePos, anchoredPos);
-
-        // Convert normalized values back to actual lat/lon
-        float latRange = topLeftLatLon.x - bottomLeftLatLon.x;
-        float lonRange = topRightLatLon.y - topLeftLatLon.y;
-
-        float lat = bottomLeftLatLon.x + (latNorm * latRange);
-        float lon = topLeftLatLon.y + (lonNorm * lonRange);
-
-        return new Vector2(lat, lon);
-    }
-
-    // Helper function to find distance from a point to a line
-    private float DistancePointToLine(Vector2 point, Vector2 lineStart, Vector2 lineEnd)
-    {
-        Vector2 line = lineEnd - lineStart;
-        float lineLength = line.magnitude;
-
-        if (lineLength == 0f) return Vector2.Distance(point, lineStart);
-
-        float projection = Vector2.Dot(point - lineStart, line) / (lineLength * lineLength);
-        projection = Mathf.Clamp01(projection);
-
-        Vector2 projectedPoint = lineStart + projection * line;
-        return Vector2.Distance(point, projectedPoint);
-    }
-
-    // Helper function for inverse linear interpolation
-    private float InverseLerp(Vector2 a, Vector2 b, Vector2 point)
-    {
-        Vector2 ab = b - a;
-        Vector2 ap = point - a;
-
-        float abDot = Vector2.Dot(ab, ab);
-        if (abDot <= 0.0001f) return 0f;
-
-        float t = Vector2.Dot(ap, ab) / abDot;
-        return Mathf.Clamp01(t);
-    }
-
-    // Add test grid to verify mapping accuracy
-    private void AddTestGrid()
-    {
-        for (int i = 0; i <= gridDensity; i++)
+        foreach (GridPoint gp in mapData.grid)
         {
-            for (int j = 0; j <= gridDensity; j++)
+            float dx = gp.lat - lat;
+            float dy = gp.lon - lon;
+            float distSq = dx * dx + dy * dy; // squared distance
+            distList.Add((distSq, gp));
+        }
+
+        // Sort ascending by distSq
+        distList.Sort((a, b) => a.distSq.CompareTo(b.distSq));
+
+        // Take the first k points
+        List<GridPoint> result = new List<GridPoint>(k);
+        for (int i = 0; i < k && i < distList.Count; i++)
+        {
+            result.Add(distList[i].gp);
+        }
+        return result;
+    }
+
+    /// <summary>
+    /// Performs inverse-distance weighting to get a single normalized (x,y)
+    /// from multiple neighbor points. If distance=0 for any neighbor, we short-circuit to that point.
+    /// </summary>
+    private Vector2 InverseDistanceWeightedNormalized(float lat, float lon, List<GridPoint> neighbors, float power)
+    {
+        float sumWeights = 0f;
+        float sumX = 0f;
+        float sumY = 0f;
+
+        foreach (GridPoint gp in neighbors)
+        {
+            float dx = gp.lat - lat;
+            float dy = gp.lon - lon;
+            float dist = Mathf.Sqrt(dx * dx + dy * dy);
+
+            if (dist < 1e-9f)
             {
-                float latNorm = (float)i / gridDensity;
-                float lonNorm = (float)j / gridDensity;
-
-                float latRange = topLeftLatLon.x - bottomLeftLatLon.x;
-                float lonRange = topRightLatLon.y - topLeftLatLon.y;
-
-                float lat = bottomLeftLatLon.x + (latNorm * latRange);
-                float lon = topLeftLatLon.y + (lonNorm * lonRange);
-
-                var marker = PlaceMarkerAtLatLon(lat, lon);
-                marker.GetComponent<Image>().color = new Color(1f, 0.5f, 0.5f, 0.7f);
-                marker.transform.localScale = Vector3.one * 0.5f;
+                // Exactly on a grid point, short-circuit
+                return new Vector2(gp.normalizedX, gp.normalizedY);
             }
+
+            // weight = 1 / dist^power
+            float w = 1f / Mathf.Pow(dist, power);
+            sumWeights += w;
+            sumX += w * gp.normalizedX;
+            sumY += w * gp.normalizedY;
         }
+
+        if (sumWeights < 1e-12f)
+        {
+            // fallback if something weird happens
+            return new Vector2(neighbors[0].normalizedX, neighbors[0].normalizedY);
+        }
+
+        float outX = sumX / sumWeights;
+        float outY = sumY / sumWeights;
+        return new Vector2(outX, outY);
+    }
+
+    /// <summary>
+    /// If you want to see all grid points, we skip some to avoid clutter.
+    /// </summary>
+    private void PlaceAllGridMarkers()
+    {
+        if (mapData == null || mapData.grid == null) return;
+
+        Debug.Log($"Placing grid markers for {mapData.grid.Length} points (skip={gridStep})...");
+        for (int i = 0; i < mapData.grid.Length; i += gridStep)
+        {
+            GridPoint gp = mapData.grid[i];
+            Vector2 unityPos = ConvertNormalizedToUnity(gp.normalizedX, gp.normalizedY);
+            InstantiateMarker(unityPos);
+        }
+    }
+
+    /// <summary>
+    /// Converts normalized coords [0..1] to Unity coords for your map.
+    /// 0 => top/left, 1 => bottom/right.
+    /// So x=0 => leftX, x=1 => rightX
+    ///    y=0 => topY,  y=1 => bottomY
+    /// </summary>
+    private Vector2 ConvertNormalizedToUnity(float nx, float ny)
+    {
+        float x = Mathf.Lerp(leftX, rightX, nx);
+        float y = Mathf.Lerp(topY, bottomY, ny);
+        return new Vector2(x, y);
+    }
+
+    /// <summary>
+    /// Instantiates a marker in mapContent, sets its anchoredPosition,
+    /// and forces it to render on top by giving it a Canvas with a high sortingOrder.
+    /// </summary>
+    private void InstantiateMarker(Vector2 position)
+    {
+        if (markerPrefab == null || mapContent == null)
+        {
+            Debug.LogError("MarkerPrefab or mapContent not set!");
+            return;
+        }
+
+        GameObject markerObj = Instantiate(markerPrefab, mapContent);
+        markerObj.SetActive(true);
+
+        RectTransform rt = markerObj.GetComponent<RectTransform>();
+        if (rt != null)
+        {
+            rt.anchoredPosition = position;
+        }
+        else
+        {
+            markerObj.transform.position = new Vector3(position.x, position.y, 0f);
+        }
+
+        // Force marker on top
+        Canvas markerCanvas = markerObj.GetComponent<Canvas>();
+        if (markerCanvas == null) markerCanvas = markerObj.AddComponent<Canvas>();
+        markerCanvas.overrideSorting = true;
+        markerCanvas.sortingOrder = 999;
+
+        Image img = markerObj.GetComponent<Image>();
+        if (img != null) img.enabled = true;
+    }
+
+    // JSON data classes
+    [System.Serializable]
+    public class MapData
+    {
+        public GridPoint[] grid;
+    }
+
+    [System.Serializable]
+    public class GridPoint
+    {
+        public float normalizedX;
+        public float normalizedY;
+        public float lat;
+        public float lon;
     }
 }
