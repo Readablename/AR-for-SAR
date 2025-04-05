@@ -6,7 +6,7 @@
         "hash": "42041f7dc068",
         "mtime": 1738675486610,
         "size": 10827883,
-        "localPath": "C:\\Users\\aleks\\Documents\\Skole\\TPG4850 VR-landsbyen\\AR-for-SAR\\Packages\\MixedReality\\com.microsoft.mixedreality.openxr-1.11.2.tgz"
+        "localPath": "C:\\Users\\aleks\\Documents\\AR-for-SAR\\Packages\\MixedReality\\com.microsoft.mixedreality.openxr-1.11.2.tgz"
       }
     },
     "com.microsoft.mixedreality.toolkit.extensions": {
@@ -14,7 +14,7 @@
         "hash": "84fe3e76e9b7",
         "mtime": 1743864061704,
         "size": 1131406,
-        "localPath": "C:\\Users\\aleks\\Documents\\Skole\\TPG4850 VR-landsbyen\\AR-for-SAR\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.extensions-2.8.3.tgz"
+        "localPath": "C:\\Users\\aleks\\Documents\\AR-for-SAR\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.extensions-2.8.3.tgz"
       }
     },
     "com.microsoft.mixedreality.toolkit.foundation": {
@@ -22,7 +22,7 @@
         "hash": "f2323a9b7aec",
         "mtime": 1738675485143,
         "size": 11691469,
-        "localPath": "C:\\Users\\aleks\\Documents\\Skole\\TPG4850 VR-landsbyen\\AR-for-SAR\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.foundation-2.8.3.tgz"
+        "localPath": "C:\\Users\\aleks\\Documents\\AR-for-SAR\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.foundation-2.8.3.tgz"
       }
     },
     "com.microsoft.mixedreality.toolkit.standardassets": {
@@ -30,7 +30,7 @@
         "hash": "aab256284dc6",
         "mtime": 1738675483743,
         "size": 5328617,
-        "localPath": "C:\\Users\\aleks\\Documents\\Skole\\TPG4850 VR-landsbyen\\AR-for-SAR\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.standardassets-2.8.3.tgz"
+        "localPath": "C:\\Users\\aleks\\Documents\\AR-for-SAR\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.standardassets-2.8.3.tgz"
       }
     }
   }
