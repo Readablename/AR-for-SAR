@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.57f1 (9d8bd91adc0a) revision 10324953'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 15965 MB
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'no' Physical Memory: 8043 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.57f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/NewUser/Algoritmer/unity/Map2
+C:/Users/aleks/Documents/Skole/TPG4850 VR-landsbyen/AR-for-SAR
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-64975
-Successfully changed project path to: C:/Users/NewUser/Algoritmer/unity/Map2
-C:/Users/NewUser/Algoritmer/unity/Map2
+59752
+Successfully changed project path to: C:/Users/aleks/Documents/Skole/TPG4850 VR-landsbyen/AR-for-SAR
+C:/Users/aleks/Documents/Skole/TPG4850 VR-landsbyen/AR-for-SAR
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,73 +49,73 @@ C:/Users/NewUser/Algoritmer/unity/Map2
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [14588]  Target information:
+Player connection [4668]  Target information:
 
-Player connection [14588]  * "[IP] 10.22.99.239 [Port] 0 [Flags] 2 [Guid] 2792804566 [EditorId] 2792804566 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-9U2ULFQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [4668]  * "[IP] 10.22.54.83 [Port] 0 [Flags] 2 [Guid] 1497735082 [EditorId] 1497735082 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HTR4UNFL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [14588] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [14588] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [4668] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [4668] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-Refreshing native plugins compatible for Editor in 3484.19 ms, found 3 plugins.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 54.19 ms, found 15 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.57f1 (9d8bd91adc0a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/NewUser/Algoritmer/unity/Map2/Assets
+[Subsystems] Discovering subsystems at path C:/Users/aleks/Documents/Skole/TPG4850 VR-landsbyen/AR-for-SAR/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA Quadro P2000 (ID=0x1cba)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
     Vendor:   NVIDIA
-    VRAM:     4004 MB
-    Driver:   32.0.15.6624
+    VRAM:     3938 MB
+    Driver:   32.0.15.6636
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56100
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56096
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.090329 seconds.
-- Loaded All Assemblies, in  1.621 seconds
+Registered in 0.012506 seconds.
+- Loaded All Assemblies, in  0.771 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 933 ms
+Android Extension - Scanning For ADB Devices 639 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.740 seconds
-Domain Reload Profiling: 3346ms
-	BeginReloadAssembly (321ms)
+- Finished resetting the current domain, in  1.377 seconds
+Domain Reload Profiling: 2146ms
+	BeginReloadAssembly (246ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (240ms)
-	RebuildNativeTypeToScriptingClass (67ms)
-	initialDomainReloadingComplete (361ms)
-	LoadAllAssembliesAndSetupDomain (616ms)
-		LoadAssemblies (321ms)
+	RebuildCommonClasses (96ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (111ms)
+	LoadAllAssembliesAndSetupDomain (287ms)
+		LoadAssemblies (245ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (602ms)
-			TypeCache.Refresh (597ms)
-				TypeCache.ScanAssembly (555ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (1741ms)
+		AnalyzeDomain (279ms)
+			TypeCache.Refresh (277ms)
+				TypeCache.ScanAssembly (255ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1378ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1608ms)
+		SetupLoadedEditorAssemblies (1285ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1224ms)
-			SetLoadedEditorAssemblies (11ms)
+			InitializePlatformSupportModulesInManaged (810ms)
+			SetLoadedEditorAssemblies (14ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (261ms)
-			ProcessInitializeOnLoadMethodAttributes (106ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (359ms)
+			ProcessInitializeOnLoadMethodAttributes (97ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -124,63 +124,1340 @@ Domain Reload Profiling: 3346ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 13.608 seconds
+- Loaded All Assemblies, in  3.728 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.689 seconds
-Domain Reload Profiling: 16266ms
-	BeginReloadAssembly (572ms)
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in 12.127 seconds
+Domain Reload Profiling: 15850ms
+	BeginReloadAssembly (430ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (22ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (67ms)
-	RebuildCommonClasses (129ms)
-	RebuildNativeTypeToScriptingClass (39ms)
-	initialDomainReloadingComplete (216ms)
-	LoadAllAssembliesAndSetupDomain (12619ms)
-		LoadAssemblies (12112ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (182ms)
+	RebuildNativeTypeToScriptingClass (57ms)
+	initialDomainReloadingComplete (115ms)
+	LoadAllAssembliesAndSetupDomain (2938ms)
+		LoadAssemblies (1297ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (851ms)
-			TypeCache.Refresh (743ms)
-				TypeCache.ScanAssembly (657ms)
-			ScanForSourceGeneratedMonoScriptInfo (70ms)
-			ResolveRequiredComponents (31ms)
-	FinalizeReload (2691ms)
+		AnalyzeDomain (1940ms)
+			TypeCache.Refresh (1684ms)
+				TypeCache.ScanAssembly (1574ms)
+			ScanForSourceGeneratedMonoScriptInfo (218ms)
+			ResolveRequiredComponents (33ms)
+	FinalizeReload (12127ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1682ms)
+		SetupLoadedEditorAssemblies (9945ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (118ms)
-			SetLoadedEditorAssemblies (14ms)
+			InitializePlatformSupportModulesInManaged (696ms)
+			SetLoadedEditorAssemblies (123ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (327ms)
-			ProcessInitializeOnLoadAttributes (1112ms)
-			ProcessInitializeOnLoadMethodAttributes (70ms)
-			AfterProcessingInitializeOnLoad (40ms)
+			BeforeProcessingInitializeOnLoad (7595ms)
+			ProcessInitializeOnLoadAttributes (1344ms)
+			ProcessInitializeOnLoadMethodAttributes (177ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (31ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.31 seconds
-Refreshing native plugins compatible for Editor in 28.61 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 33.93 ms, found 15 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3127 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (54.5 KB). Loaded Objects now: 3596.
-Memory consumption went from 119.1 MB to 119.0 MB.
-Total: 14.279700 ms (FindLiveObjects: 0.932600 ms CreateObjectMapping: 0.743600 ms MarkObjects: 12.276100 ms  DeleteObjects: 0.325000 ms)
+Unloading 5902 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 90 unused Assets / (1.2 MB). Loaded Objects now: 6376.
+Memory consumption went from 190.3 MB to 189.2 MB.
+Total: 26.415600 ms (FindLiveObjects: 8.261600 ms CreateObjectMapping: 2.438400 ms MarkObjects: 14.282200 ms  DeleteObjects: 1.430900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/DPadInteraction.cs: 95e73fe253040182d7d3a72946b178f3 -> 93f85c8ba74c4199c8fc9b6e8c6fb8a6
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettingsEditor.cs: 432d4287b2c032d3f57733ec7a14ca52 -> 46f7bc9b6667349416d592c92274a2cd
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/UWPCoreWindowBuildHooks.cs: 83747187b120078555c0394b9a9b0ce0 -> 528ee0545204f8083d130ec04efc78bc
+  custom:scripting/monoscript/fileName/MetaQuestFeatureEditor.cs: acb175f41678fa8897fabd924791b0e7 -> fff340053bb2e94334d0d5989f2eb349
+  custom:scripting/monoscript/fileName/PalmPoseInteraction.cs: d1ed093e68224e5cc45274e3ae6adc1c -> 6bd25b6029acb9127f25748cb0b6d2a8
+  custom:scripting/monoscript/fileName/MetaQuestTouchPlusControllerProfile.cs: 4e520896c61257b66b72a7db8b275278 -> 4b9439e11567c27c85546e11bafeabe7
+  custom:scripting/monoscript/fileName/OpenXRRuntime.cs: 41cdbd5bfbc4a71a3067e813237075c2 -> c3a00f9ce6a0283dcb391b83637adf44
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/MetaQuestTouchProControllerProfile.cs: 924a0a20cbec88241d3a6560225c517c -> 9fffae235d4c14901711127c7daeb86c
+  custom:scripting/monoscript/fileName/OpenXRConstants.cs: 62bb241e63691239607e98a1eb79e80e -> f878d042bd3999b796b9387b0c8a1032
+  custom:scripting/monoscript/fileName/OpenXRFeatureUICommon.cs: 461800e5238100664aadc5872df93167 -> 45f7a59cd9c5cd84e28e0f7a429879c2
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/OpenXRLoaderUI.cs: 9a80d2e453353745eb2f0dd55330d851 -> ebd8d704d5e26f054d43886c272cd005
+  custom:scripting/monoscript/fileName/WaitForRestartFinish.cs: c5a146c5b1d306e0748cbca9592361f1 -> 0e76bf389cf347a5d8d6432ec661895f
+  custom:scripting/monoscript/fileName/KHRSimpleControllerProfile.cs: 3b25cc37f550e18bd565ed99a4735dab -> bcdcb81587b2075f7af2f75706b9e69a
+  custom:scripting/monoscript/fileName/OpenXRBuildProcessor.cs: 78ee5da2c331be8992399c1b88b44da9 -> 48dc0e114f75799c0d74bafe70808189
+  custom:scripting/monoscript/fileName/OpenXRFeatureInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/DPadInteractionCustomEditor.cs: 99cd61b34a13338ccbcfea9c8d6abe5b -> d93785eeae2b4d41d39f603bd6f9849d
+  custom:scripting/monoscript/fileName/OpenXRSpaceSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/ConformanceAutomationFeature.cs: cecaa95652b5ef8cb218b1dba74d83f1 -> 97112e825fad9ed87f6a9c7acc231c0b
+  custom:scripting/monoscript/fileName/OpenXRLoaderInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/FeatureHelpers.cs: 04ad13b1b8191b392f3bd1df6ddd9271 -> 0e8d07707daeed1da30b1605e903226b
+  custom:scripting/monoscript/fileName/DebuggerState.cs: 9e1dc0a50db973559c612ce1e515d668 -> 41070b7a08cc178a9ea51324cdaf5b81
   custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/OpenXRHmd.cs: be9ba1f914b0ca630d830f312e55d947 -> 1624687aa096b40d58d149d9c6304cca
+  custom:scripting/monoscript/fileName/OpenXRMangementSettings.cs: 92bd940a5b14de9463a17a42849426eb -> 5a013b6c45b1e1d06085cb1496493b86
+  custom:scripting/monoscript/fileName/OculusTouchControllerProfile.cs: 30174fa0cf36f963f4ec71c1aeb12f39 -> 03df51b5c781d1980f509408bae72bc8
+  custom:scripting/monoscript/fileName/OpenXRNativeTypes.cs: d5f77ef615de827e223bd481494fbeac -> 11be60823314f621c1b0bb94bf4fe744
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/KnownFeatureSets.cs: ef1e57626e9d494e608dd097a504d985 -> 2cf391597f07a52473981e9cc2b41b67
+  custom:scripting/monoscript/fileName/OpenXRProjectValidationRulesSetup.cs: 25e2d07ebf4abc51d6b13033f9d9631b -> 63c520149123eced22b6028c5ebd9d08
+  custom:scripting/monoscript/fileName/MicrosoftHandInteraction.cs: 4dc4abdfb772f525705d10e2a1807220 -> dac920740153b0163dda0f7e56920e40
+  custom:scripting/monoscript/fileName/RuntimeDebuggerWindow.cs: 410e78f6930c47a47f060ada0f65ea14 -> 0bc1d5ee7ce2553d42d62861471f3c44
+  custom:scripting/monoscript/fileName/PackageSettingsEditor.cs: 3d290d8387d6b7e9107e28c918b35a75 -> 6212fddebb8f67c4da0f50592230839b
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/OpenXRLoader.cs: 0a390cb75d019256a3fc204102cb314c -> 2a03893d4aa4b960c2f49090b4b03a7b
+  custom:scripting/monoscript/fileName/ValveIndexControllerProfile.cs: dcb1a84c7641748e3dbe495d3f7fcacd -> f923b1771c835a70375d3505e818878d
+  custom:scripting/monoscript/fileName/OculusQuestFeatureEditor.cs: caa2240a357715777809c1e155d7fcfc -> af70b82209b4cf6ce20a2da2892dfc5f
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/OpenXRChooseRuntimeLibraries.cs: 310f73dd2546cb472dfd9dd2b709f43e -> 3923c2f1337a35d737ad0192eb46b432
+  custom:scripting/monoscript/fileName/OculusQuestFeature.cs: f4ac8316c0f32dfaffd8fcb19bf24db7 -> 041c3418dd65b8e99ca410c708996814
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetManager.cs: 4e048d6bab7aae2619fe673806cc6ebf -> 4f340a53d115a7e1888d00ddc4cd614b
+  custom:scripting/monoscript/fileName/OpenXRColorSubmissonModeList.cs: c5c371b3c10ce050fcca3ce0bbdf4109 -> 62c3c48199b3c893ece86757b75b0604
+  custom:scripting/monoscript/fileName/OpenXRUtility.cs: c9c08bfbdacbe0dd33e419d1d82db65a -> af9b8bca68ffa2bc69f78ec0da9cf1fd
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/MockRuntime.cs: 4707e1b72a1c680c9bca910cce99580c -> 8e970d93da4762c7d57e9c9dd2b36dbb
+  custom:scripting/monoscript/fileName/OpenXRDevice.cs: f3c3823f4956568d1e9728f978cdcf7b -> 1b3be9b024fb29351711164fb0577202
+  custom:scripting/monoscript/fileName/OpenXRUnityAPI.cs: 45bb7e1c3ff6f74b6c2cddf5d0db4aef -> 95d0f03221767acb8a4a43279af12154
+  custom:scripting/monoscript/fileName/HTCViveControllerProfile.cs: 68cbea6a75bb808962ef4679852274fe -> 575b921c71649e99576a05f0add9cf5d
+  custom:scripting/monoscript/fileName/BootConfigBuilder.cs: 80cbd1d6b38400b696adb897e5751311 -> a174d8870c7a69fabc7d42a75b0f23aa
+  custom:scripting/monoscript/fileName/OpenXRRenderSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/EyeGazeInteraction.cs: df93ecad6ff84040ea811a409734aecf -> dc1f12620c8656649cfc16f13969f5fa
+  custom:scripting/monoscript/fileName/OpenXRAnalytics.cs: cd04f750fae989b24a13eb8b7fc568c7 -> 67d5de80ae8e3ee46bb1b4907783d54c
+  custom:scripting/monoscript/fileName/MicrosoftMotionControllerProfile.cs: 047322156082fa203c5ec2a3d6b58d79 -> 6dcaa2067404bed7771687f2f9dfa057
+  custom:scripting/monoscript/fileName/OpenXRRestarter.cs: 42c4a284fa4bc016f7554a7523fe6083 -> c236f3f43c026f409512d203b81e6184
+  custom:scripting/monoscript/fileName/OpenXRFeatureAttribute.cs: 5c95bca3ecb995bf54767d3bdb396139 -> 99305d666df750d87e7264e3c7ae4f2a
+  custom:scripting/monoscript/fileName/OpenXRLoaderNoPreInit.cs: 7ea37fe40035155d109f06ed1e31bdc0 -> 8f7a064e1e0bb6e17b9f5d171fe53dfc
+  custom:scripting/monoscript/fileName/HandCommonPosesInteraction.cs: a9ba4ac130365bd9a98d3249459ad095 -> c984aa78f460c3bf39ec56bc9a0a414a
+  custom:scripting/monoscript/fileName/OpenXRDiagnosticReport.cs: 81b79e6d53653bad181c2294c861dd29 -> f43e8307d90025ed39c346ed63d1208d
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeatureEditor.cs: 78d558165618d978f07c916ce9e6e2f5 -> 26a9be57964b520d3a47d8c20db877e9
+  custom:scripting/monoscript/fileName/PoseControl.cs: 609dfc7c8c05a1cf200909bbac757fec -> 4ff0d325328ef40fb1693e34ac3358bf
+  custom:scripting/monoscript/fileName/OpenXRFeatureBuildHooks.cs: 1710c5d7a8e48075c9e4aff8b45f1152 -> da31756dd3c74e69bcd7ed1a1983ed53
+  custom:scripting/monoscript/fileName/HPReverbG2ControllerProfile.cs: 9d8499f0c7d25c6b81dc777a2c71df61 -> 6aadb5e22feaccfa77ef6db6c4d4541c
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/BootConfig.cs: 24b01b5e4e987a969a9c22c0ebea884d -> b2c4d54615a39b14509e601dd0f329ff
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsFeature.cs: 3bba6683d3988347de546d285dd94964 -> d323744d9bc61085862cbc785e1f985c
+  custom:scripting/monoscript/fileName/OpenXRPackageSettings.cs: b11fb0112aeb128e201271bf06e53e96 -> 4f4aaba453bf105fb1c3c3d64247142d
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestMeta.cs: 0665e52998c0deb3bd8028395f9cc405 -> 3b920058e4dd8cbdb95cce4af271f981
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetAttribute.cs: 984b4e8e6598cf2b759dd56f021485ae -> 9e20f05fe0a3688af8836175869f0bb7
+  custom:scripting/monoscript/fileName/FoveatedRenderingFeature.cs: 0e86c0901bc27e397ae214482da57354 -> 3cd591174f2fee5d1b0d6a1875383a9b
+  custom:scripting/monoscript/fileName/HapticControl.cs: 81ffcc968c7774530b274658fb3c363b -> d7a5389cafde2a1337c58e2f0d91a837
+  custom:scripting/monoscript/fileName/MetaQuestFeature.cs: 3ce83f71782e0ea75b31e962ea3efa0c -> b9c317336250afc5bb5fa2c2df269ea6
+  custom:scripting/monoscript/fileName/OpenXRRuntimeSelector.cs: 7e0d7dbc5dab41d73648ca1f9f1a98b5 -> 929d3ce28c815a19c6c335174420bf6b
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsTypes.cs: 48ea32296967fd5d34af1b09b2b71daf -> 5bc9c5b4646eff91646254ce341c6683
+  custom:scripting/monoscript/fileName/OpenXRFeatureEditor.cs: 80fd68feb25104575fb2fab5d957091c -> 01dd3fecc4e9c7ce9fb6af5d0948ba2a
+  custom:scripting/monoscript/fileName/BuildHelperUtils.cs: 8328d1d9a38e1eb013b8e145e6eaf5e2 -> 619773c3d1b7f3f0ca7461f5c27242a8
+  custom:scripting/monoscript/fileName/HandInteractionProfile.cs: 0d2aed2831986eac6f8f9aa17828b9d5 -> 9c7649bd495ee99cc73ddacbe0a8cd95
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestOculus.cs: fb2d868358b34027ef7bebd7c414bb6f -> 1d09740e7edd66fffc5895aae9e385d3
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeature.cs: ca724df07df4d3ac84a3c339b29d867a -> 8b269b64ad1c99e85d7f28185c15f7bb
+  custom:scripting/monoscript/fileName/MetaQuestFeatureBuildHooks.cs: 9faef18f7993e6e1073d79300a2378de -> 2ac755c66ffd4e4b7c22530386a7ba47
+  custom:scripting/monoscript/fileName/OpenXRInput.cs: 22c2d7f1ec78d2a3229acc23c316aa56 -> b351db87f98ee399e568b78e0ed353e3
+  custom:scripting/monoscript/fileName/OpenXRInteractionFeature.cs: cdbb80131a5413ae3319d169bec27823 -> a60484418ad6b497996467bb6f98db73
+  custom:scripting/monoscript/fileName/OpenXREditorSettings.cs: 2445cd97d9c83a89667b220edba88001 -> 321e3a8126bc4b0248cbcecf63892f31
+  custom:scripting/monoscript/fileName/OpenXRProjectValidation.cs: b212a865ce6bc0eec7aa584eb24e0320 -> 181508e149a91a64c6dfdc447b97c322
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.091 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.411 seconds
+Domain Reload Profiling: 3495ms
+	BeginReloadAssembly (263ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (72ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (691ms)
+		LoadAssemblies (581ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (239ms)
+			TypeCache.Refresh (176ms)
+				TypeCache.ScanAssembly (149ms)
+			ScanForSourceGeneratedMonoScriptInfo (43ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (2412ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (759ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (123ms)
+			ProcessInitializeOnLoadAttributes (526ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 32.56 ms, found 15 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5872 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 83 unused Assets / (1.1 MB). Loaded Objects now: 6380.
+Memory consumption went from 184.7 MB to 183.5 MB.
+Total: 10.397100 ms (FindLiveObjects: 1.029200 ms CreateObjectMapping: 0.870600 ms MarkObjects: 7.202400 ms  DeleteObjects: 1.293200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/DPadInteraction.cs: 95e73fe253040182d7d3a72946b178f3 -> 93f85c8ba74c4199c8fc9b6e8c6fb8a6
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettingsEditor.cs: 432d4287b2c032d3f57733ec7a14ca52 -> 46f7bc9b6667349416d592c92274a2cd
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/UWPCoreWindowBuildHooks.cs: 83747187b120078555c0394b9a9b0ce0 -> 528ee0545204f8083d130ec04efc78bc
+  custom:scripting/monoscript/fileName/MetaQuestFeatureEditor.cs: acb175f41678fa8897fabd924791b0e7 -> fff340053bb2e94334d0d5989f2eb349
+  custom:scripting/monoscript/fileName/PalmPoseInteraction.cs: d1ed093e68224e5cc45274e3ae6adc1c -> 6bd25b6029acb9127f25748cb0b6d2a8
+  custom:scripting/monoscript/fileName/MetaQuestTouchPlusControllerProfile.cs: 4e520896c61257b66b72a7db8b275278 -> 4b9439e11567c27c85546e11bafeabe7
+  custom:scripting/monoscript/fileName/OpenXRRuntime.cs: 41cdbd5bfbc4a71a3067e813237075c2 -> c3a00f9ce6a0283dcb391b83637adf44
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/MetaQuestTouchProControllerProfile.cs: 924a0a20cbec88241d3a6560225c517c -> 9fffae235d4c14901711127c7daeb86c
+  custom:scripting/monoscript/fileName/OpenXRConstants.cs: 62bb241e63691239607e98a1eb79e80e -> f878d042bd3999b796b9387b0c8a1032
+  custom:scripting/monoscript/fileName/OpenXRFeatureUICommon.cs: 461800e5238100664aadc5872df93167 -> 45f7a59cd9c5cd84e28e0f7a429879c2
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/OpenXRLoaderUI.cs: 9a80d2e453353745eb2f0dd55330d851 -> ebd8d704d5e26f054d43886c272cd005
+  custom:scripting/monoscript/fileName/WaitForRestartFinish.cs: c5a146c5b1d306e0748cbca9592361f1 -> 0e76bf389cf347a5d8d6432ec661895f
+  custom:scripting/monoscript/fileName/KHRSimpleControllerProfile.cs: 3b25cc37f550e18bd565ed99a4735dab -> bcdcb81587b2075f7af2f75706b9e69a
+  custom:scripting/monoscript/fileName/OpenXRBuildProcessor.cs: 78ee5da2c331be8992399c1b88b44da9 -> 48dc0e114f75799c0d74bafe70808189
+  custom:scripting/monoscript/fileName/OpenXRFeatureInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/DPadInteractionCustomEditor.cs: 99cd61b34a13338ccbcfea9c8d6abe5b -> d93785eeae2b4d41d39f603bd6f9849d
+  custom:scripting/monoscript/fileName/OpenXRSpaceSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/ConformanceAutomationFeature.cs: cecaa95652b5ef8cb218b1dba74d83f1 -> 97112e825fad9ed87f6a9c7acc231c0b
+  custom:scripting/monoscript/fileName/OpenXRLoaderInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/FeatureHelpers.cs: 04ad13b1b8191b392f3bd1df6ddd9271 -> 0e8d07707daeed1da30b1605e903226b
+  custom:scripting/monoscript/fileName/DebuggerState.cs: 9e1dc0a50db973559c612ce1e515d668 -> 41070b7a08cc178a9ea51324cdaf5b81
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/OpenXRHmd.cs: be9ba1f914b0ca630d830f312e55d947 -> 1624687aa096b40d58d149d9c6304cca
+  custom:scripting/monoscript/fileName/OpenXRMangementSettings.cs: 92bd940a5b14de9463a17a42849426eb -> 5a013b6c45b1e1d06085cb1496493b86
+  custom:scripting/monoscript/fileName/OculusTouchControllerProfile.cs: 30174fa0cf36f963f4ec71c1aeb12f39 -> 03df51b5c781d1980f509408bae72bc8
+  custom:scripting/monoscript/fileName/OpenXRNativeTypes.cs: d5f77ef615de827e223bd481494fbeac -> 11be60823314f621c1b0bb94bf4fe744
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/KnownFeatureSets.cs: ef1e57626e9d494e608dd097a504d985 -> 2cf391597f07a52473981e9cc2b41b67
+  custom:scripting/monoscript/fileName/OpenXRProjectValidationRulesSetup.cs: 25e2d07ebf4abc51d6b13033f9d9631b -> 63c520149123eced22b6028c5ebd9d08
+  custom:scripting/monoscript/fileName/MicrosoftHandInteraction.cs: 4dc4abdfb772f525705d10e2a1807220 -> dac920740153b0163dda0f7e56920e40
+  custom:scripting/monoscript/fileName/RuntimeDebuggerWindow.cs: 410e78f6930c47a47f060ada0f65ea14 -> 0bc1d5ee7ce2553d42d62861471f3c44
+  custom:scripting/monoscript/fileName/PackageSettingsEditor.cs: 3d290d8387d6b7e9107e28c918b35a75 -> 6212fddebb8f67c4da0f50592230839b
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/OpenXRLoader.cs: 0a390cb75d019256a3fc204102cb314c -> 2a03893d4aa4b960c2f49090b4b03a7b
+  custom:scripting/monoscript/fileName/ValveIndexControllerProfile.cs: dcb1a84c7641748e3dbe495d3f7fcacd -> f923b1771c835a70375d3505e818878d
+  custom:scripting/monoscript/fileName/OculusQuestFeatureEditor.cs: caa2240a357715777809c1e155d7fcfc -> af70b82209b4cf6ce20a2da2892dfc5f
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/OpenXRChooseRuntimeLibraries.cs: 310f73dd2546cb472dfd9dd2b709f43e -> 3923c2f1337a35d737ad0192eb46b432
+  custom:scripting/monoscript/fileName/OculusQuestFeature.cs: f4ac8316c0f32dfaffd8fcb19bf24db7 -> 041c3418dd65b8e99ca410c708996814
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetManager.cs: 4e048d6bab7aae2619fe673806cc6ebf -> 4f340a53d115a7e1888d00ddc4cd614b
+  custom:scripting/monoscript/fileName/OpenXRColorSubmissonModeList.cs: c5c371b3c10ce050fcca3ce0bbdf4109 -> 62c3c48199b3c893ece86757b75b0604
+  custom:scripting/monoscript/fileName/OpenXRUtility.cs: c9c08bfbdacbe0dd33e419d1d82db65a -> af9b8bca68ffa2bc69f78ec0da9cf1fd
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/MockRuntime.cs: 4707e1b72a1c680c9bca910cce99580c -> 8e970d93da4762c7d57e9c9dd2b36dbb
+  custom:scripting/monoscript/fileName/OpenXRDevice.cs: f3c3823f4956568d1e9728f978cdcf7b -> 1b3be9b024fb29351711164fb0577202
+  custom:scripting/monoscript/fileName/OpenXRUnityAPI.cs: 45bb7e1c3ff6f74b6c2cddf5d0db4aef -> 95d0f03221767acb8a4a43279af12154
+  custom:scripting/monoscript/fileName/HTCViveControllerProfile.cs: 68cbea6a75bb808962ef4679852274fe -> 575b921c71649e99576a05f0add9cf5d
+  custom:scripting/monoscript/fileName/BootConfigBuilder.cs: 80cbd1d6b38400b696adb897e5751311 -> a174d8870c7a69fabc7d42a75b0f23aa
+  custom:scripting/monoscript/fileName/OpenXRRenderSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/EyeGazeInteraction.cs: df93ecad6ff84040ea811a409734aecf -> dc1f12620c8656649cfc16f13969f5fa
+  custom:scripting/monoscript/fileName/OpenXRAnalytics.cs: cd04f750fae989b24a13eb8b7fc568c7 -> 67d5de80ae8e3ee46bb1b4907783d54c
+  custom:scripting/monoscript/fileName/MicrosoftMotionControllerProfile.cs: 047322156082fa203c5ec2a3d6b58d79 -> 6dcaa2067404bed7771687f2f9dfa057
+  custom:scripting/monoscript/fileName/OpenXRRestarter.cs: 42c4a284fa4bc016f7554a7523fe6083 -> c236f3f43c026f409512d203b81e6184
+  custom:scripting/monoscript/fileName/OpenXRFeatureAttribute.cs: 5c95bca3ecb995bf54767d3bdb396139 -> 99305d666df750d87e7264e3c7ae4f2a
+  custom:scripting/monoscript/fileName/OpenXRLoaderNoPreInit.cs: 7ea37fe40035155d109f06ed1e31bdc0 -> 8f7a064e1e0bb6e17b9f5d171fe53dfc
+  custom:scripting/monoscript/fileName/HandCommonPosesInteraction.cs: a9ba4ac130365bd9a98d3249459ad095 -> c984aa78f460c3bf39ec56bc9a0a414a
+  custom:scripting/monoscript/fileName/OpenXRDiagnosticReport.cs: 81b79e6d53653bad181c2294c861dd29 -> f43e8307d90025ed39c346ed63d1208d
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeatureEditor.cs: 78d558165618d978f07c916ce9e6e2f5 -> 26a9be57964b520d3a47d8c20db877e9
+  custom:scripting/monoscript/fileName/PoseControl.cs: 609dfc7c8c05a1cf200909bbac757fec -> 4ff0d325328ef40fb1693e34ac3358bf
+  custom:scripting/monoscript/fileName/OpenXRFeatureBuildHooks.cs: 1710c5d7a8e48075c9e4aff8b45f1152 -> da31756dd3c74e69bcd7ed1a1983ed53
+  custom:scripting/monoscript/fileName/HPReverbG2ControllerProfile.cs: 9d8499f0c7d25c6b81dc777a2c71df61 -> 6aadb5e22feaccfa77ef6db6c4d4541c
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/BootConfig.cs: 24b01b5e4e987a969a9c22c0ebea884d -> b2c4d54615a39b14509e601dd0f329ff
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsFeature.cs: 3bba6683d3988347de546d285dd94964 -> d323744d9bc61085862cbc785e1f985c
+  custom:scripting/monoscript/fileName/OpenXRPackageSettings.cs: b11fb0112aeb128e201271bf06e53e96 -> 4f4aaba453bf105fb1c3c3d64247142d
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestMeta.cs: 0665e52998c0deb3bd8028395f9cc405 -> 3b920058e4dd8cbdb95cce4af271f981
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetAttribute.cs: 984b4e8e6598cf2b759dd56f021485ae -> 9e20f05fe0a3688af8836175869f0bb7
+  custom:scripting/monoscript/fileName/FoveatedRenderingFeature.cs: 0e86c0901bc27e397ae214482da57354 -> 3cd591174f2fee5d1b0d6a1875383a9b
+  custom:scripting/monoscript/fileName/HapticControl.cs: 81ffcc968c7774530b274658fb3c363b -> d7a5389cafde2a1337c58e2f0d91a837
+  custom:scripting/monoscript/fileName/MetaQuestFeature.cs: 3ce83f71782e0ea75b31e962ea3efa0c -> b9c317336250afc5bb5fa2c2df269ea6
+  custom:scripting/monoscript/fileName/OpenXRRuntimeSelector.cs: 7e0d7dbc5dab41d73648ca1f9f1a98b5 -> 929d3ce28c815a19c6c335174420bf6b
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsTypes.cs: 48ea32296967fd5d34af1b09b2b71daf -> 5bc9c5b4646eff91646254ce341c6683
+  custom:scripting/monoscript/fileName/OpenXRFeatureEditor.cs: 80fd68feb25104575fb2fab5d957091c -> 01dd3fecc4e9c7ce9fb6af5d0948ba2a
+  custom:scripting/monoscript/fileName/BuildHelperUtils.cs: 8328d1d9a38e1eb013b8e145e6eaf5e2 -> 619773c3d1b7f3f0ca7461f5c27242a8
+  custom:scripting/monoscript/fileName/HandInteractionProfile.cs: 0d2aed2831986eac6f8f9aa17828b9d5 -> 9c7649bd495ee99cc73ddacbe0a8cd95
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestOculus.cs: fb2d868358b34027ef7bebd7c414bb6f -> 1d09740e7edd66fffc5895aae9e385d3
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeature.cs: ca724df07df4d3ac84a3c339b29d867a -> 8b269b64ad1c99e85d7f28185c15f7bb
+  custom:scripting/monoscript/fileName/MetaQuestFeatureBuildHooks.cs: 9faef18f7993e6e1073d79300a2378de -> 2ac755c66ffd4e4b7c22530386a7ba47
+  custom:scripting/monoscript/fileName/OpenXRInput.cs: 22c2d7f1ec78d2a3229acc23c316aa56 -> b351db87f98ee399e568b78e0ed353e3
+  custom:scripting/monoscript/fileName/OpenXRInteractionFeature.cs: cdbb80131a5413ae3319d169bec27823 -> a60484418ad6b497996467bb6f98db73
+  custom:scripting/monoscript/fileName/OpenXREditorSettings.cs: 2445cd97d9c83a89667b220edba88001 -> 321e3a8126bc4b0248cbcecf63892f31
+  custom:scripting/monoscript/fileName/OpenXRProjectValidation.cs: b212a865ce6bc0eec7aa584eb24e0320 -> 181508e149a91a64c6dfdc447b97c322
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.077 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.447 seconds
+Domain Reload Profiling: 3518ms
+	BeginReloadAssembly (300ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (96ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (664ms)
+		LoadAssemblies (671ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (118ms)
+			TypeCache.Refresh (33ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (54ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (2448ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (819ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (147ms)
+			ProcessInitializeOnLoadAttributes (525ms)
+			ProcessInitializeOnLoadMethodAttributes (105ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 44.85 ms, found 15 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5886 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 96 unused Assets / (1.8 MB). Loaded Objects now: 6385.
+Memory consumption went from 188.5 MB to 186.7 MB.
+Total: 20.074100 ms (FindLiveObjects: 1.980700 ms CreateObjectMapping: 2.336700 ms MarkObjects: 12.684700 ms  DeleteObjects: 3.069600 ms)
+
+Prepare: number of updated asset objects reloaded= 68
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/MagnetometerCompass.cs: 0b09d914ed53314ba4b7d98021643620 -> 
+  custom:scripting/monoscript/fileName/DPadInteraction.cs: 95e73fe253040182d7d3a72946b178f3 -> 93f85c8ba74c4199c8fc9b6e8c6fb8a6
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettingsEditor.cs: 432d4287b2c032d3f57733ec7a14ca52 -> 46f7bc9b6667349416d592c92274a2cd
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/UWPCoreWindowBuildHooks.cs: 83747187b120078555c0394b9a9b0ce0 -> 528ee0545204f8083d130ec04efc78bc
+  custom:scripting/monoscript/fileName/MetaQuestFeatureEditor.cs: acb175f41678fa8897fabd924791b0e7 -> fff340053bb2e94334d0d5989f2eb349
+  custom:scripting/monoscript/fileName/PalmPoseInteraction.cs: d1ed093e68224e5cc45274e3ae6adc1c -> 6bd25b6029acb9127f25748cb0b6d2a8
+  custom:scripting/monoscript/fileName/MetaQuestTouchPlusControllerProfile.cs: 4e520896c61257b66b72a7db8b275278 -> 4b9439e11567c27c85546e11bafeabe7
+  custom:scripting/monoscript/fileName/OpenXRRuntime.cs: 41cdbd5bfbc4a71a3067e813237075c2 -> c3a00f9ce6a0283dcb391b83637adf44
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/MetaQuestTouchProControllerProfile.cs: 924a0a20cbec88241d3a6560225c517c -> 9fffae235d4c14901711127c7daeb86c
+  custom:scripting/monoscript/fileName/OpenXRConstants.cs: 62bb241e63691239607e98a1eb79e80e -> f878d042bd3999b796b9387b0c8a1032
+  custom:scripting/monoscript/fileName/OpenXRFeatureUICommon.cs: 461800e5238100664aadc5872df93167 -> 45f7a59cd9c5cd84e28e0f7a429879c2
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/OpenXRLoaderUI.cs: 9a80d2e453353745eb2f0dd55330d851 -> ebd8d704d5e26f054d43886c272cd005
+  custom:scripting/monoscript/fileName/WaitForRestartFinish.cs: c5a146c5b1d306e0748cbca9592361f1 -> 0e76bf389cf347a5d8d6432ec661895f
+  custom:scripting/monoscript/fileName/KHRSimpleControllerProfile.cs: 3b25cc37f550e18bd565ed99a4735dab -> bcdcb81587b2075f7af2f75706b9e69a
+  custom:scripting/monoscript/fileName/OpenXRBuildProcessor.cs: 78ee5da2c331be8992399c1b88b44da9 -> 48dc0e114f75799c0d74bafe70808189
+  custom:scripting/monoscript/fileName/OpenXRFeatureInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/DPadInteractionCustomEditor.cs: 99cd61b34a13338ccbcfea9c8d6abe5b -> d93785eeae2b4d41d39f603bd6f9849d
+  custom:scripting/monoscript/fileName/OpenXRSpaceSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/ConformanceAutomationFeature.cs: cecaa95652b5ef8cb218b1dba74d83f1 -> 97112e825fad9ed87f6a9c7acc231c0b
+  custom:scripting/monoscript/fileName/OpenXRLoaderInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/FeatureHelpers.cs: 04ad13b1b8191b392f3bd1df6ddd9271 -> 0e8d07707daeed1da30b1605e903226b
+  custom:scripting/monoscript/fileName/DebuggerState.cs: 9e1dc0a50db973559c612ce1e515d668 -> 41070b7a08cc178a9ea51324cdaf5b81
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/OpenXRHmd.cs: be9ba1f914b0ca630d830f312e55d947 -> 1624687aa096b40d58d149d9c6304cca
+  custom:scripting/monoscript/fileName/OpenXRMangementSettings.cs: 92bd940a5b14de9463a17a42849426eb -> 5a013b6c45b1e1d06085cb1496493b86
+  custom:scripting/monoscript/fileName/OculusTouchControllerProfile.cs: 30174fa0cf36f963f4ec71c1aeb12f39 -> 03df51b5c781d1980f509408bae72bc8
+  custom:scripting/monoscript/fileName/OpenXRNativeTypes.cs: d5f77ef615de827e223bd481494fbeac -> 11be60823314f621c1b0bb94bf4fe744
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/KnownFeatureSets.cs: ef1e57626e9d494e608dd097a504d985 -> 2cf391597f07a52473981e9cc2b41b67
+  custom:scripting/monoscript/fileName/OpenXRProjectValidationRulesSetup.cs: 25e2d07ebf4abc51d6b13033f9d9631b -> 63c520149123eced22b6028c5ebd9d08
+  custom:scripting/monoscript/fileName/MicrosoftHandInteraction.cs: 4dc4abdfb772f525705d10e2a1807220 -> dac920740153b0163dda0f7e56920e40
+  custom:scripting/monoscript/fileName/RuntimeDebuggerWindow.cs: 410e78f6930c47a47f060ada0f65ea14 -> 0bc1d5ee7ce2553d42d62861471f3c44
+  custom:scripting/monoscript/fileName/PackageSettingsEditor.cs: 3d290d8387d6b7e9107e28c918b35a75 -> 6212fddebb8f67c4da0f50592230839b
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/OpenXRLoader.cs: 0a390cb75d019256a3fc204102cb314c -> 2a03893d4aa4b960c2f49090b4b03a7b
+  custom:scripting/monoscript/fileName/ValveIndexControllerProfile.cs: dcb1a84c7641748e3dbe495d3f7fcacd -> f923b1771c835a70375d3505e818878d
+  custom:scripting/monoscript/fileName/OculusQuestFeatureEditor.cs: caa2240a357715777809c1e155d7fcfc -> af70b82209b4cf6ce20a2da2892dfc5f
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/OpenXRChooseRuntimeLibraries.cs: 310f73dd2546cb472dfd9dd2b709f43e -> 3923c2f1337a35d737ad0192eb46b432
+  custom:scripting/monoscript/fileName/OculusQuestFeature.cs: f4ac8316c0f32dfaffd8fcb19bf24db7 -> 041c3418dd65b8e99ca410c708996814
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetManager.cs: 4e048d6bab7aae2619fe673806cc6ebf -> 4f340a53d115a7e1888d00ddc4cd614b
+  custom:scripting/monoscript/fileName/OpenXRColorSubmissonModeList.cs: c5c371b3c10ce050fcca3ce0bbdf4109 -> 62c3c48199b3c893ece86757b75b0604
+  custom:scripting/monoscript/fileName/OpenXRUtility.cs: c9c08bfbdacbe0dd33e419d1d82db65a -> af9b8bca68ffa2bc69f78ec0da9cf1fd
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/MockRuntime.cs: 4707e1b72a1c680c9bca910cce99580c -> 8e970d93da4762c7d57e9c9dd2b36dbb
+  custom:scripting/monoscript/fileName/OpenXRDevice.cs: f3c3823f4956568d1e9728f978cdcf7b -> 1b3be9b024fb29351711164fb0577202
+  custom:scripting/monoscript/fileName/OpenXRUnityAPI.cs: 45bb7e1c3ff6f74b6c2cddf5d0db4aef -> 95d0f03221767acb8a4a43279af12154
+  custom:scripting/monoscript/fileName/HTCViveControllerProfile.cs: 68cbea6a75bb808962ef4679852274fe -> 575b921c71649e99576a05f0add9cf5d
+  custom:scripting/monoscript/fileName/BootConfigBuilder.cs: 80cbd1d6b38400b696adb897e5751311 -> a174d8870c7a69fabc7d42a75b0f23aa
+  custom:scripting/monoscript/fileName/OpenXRRenderSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/EyeGazeInteraction.cs: df93ecad6ff84040ea811a409734aecf -> dc1f12620c8656649cfc16f13969f5fa
+  custom:scripting/monoscript/fileName/OpenXRAnalytics.cs: cd04f750fae989b24a13eb8b7fc568c7 -> 67d5de80ae8e3ee46bb1b4907783d54c
+  custom:scripting/monoscript/fileName/MicrosoftMotionControllerProfile.cs: 047322156082fa203c5ec2a3d6b58d79 -> 6dcaa2067404bed7771687f2f9dfa057
+  custom:scripting/monoscript/fileName/OpenXRRestarter.cs: 42c4a284fa4bc016f7554a7523fe6083 -> c236f3f43c026f409512d203b81e6184
+  custom:scripting/monoscript/fileName/OpenXRFeatureAttribute.cs: 5c95bca3ecb995bf54767d3bdb396139 -> 99305d666df750d87e7264e3c7ae4f2a
+  custom:scripting/monoscript/fileName/OpenXRLoaderNoPreInit.cs: 7ea37fe40035155d109f06ed1e31bdc0 -> 8f7a064e1e0bb6e17b9f5d171fe53dfc
+  custom:scripting/monoscript/fileName/HandCommonPosesInteraction.cs: a9ba4ac130365bd9a98d3249459ad095 -> c984aa78f460c3bf39ec56bc9a0a414a
+  custom:scripting/monoscript/fileName/OpenXRDiagnosticReport.cs: 81b79e6d53653bad181c2294c861dd29 -> f43e8307d90025ed39c346ed63d1208d
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeatureEditor.cs: 78d558165618d978f07c916ce9e6e2f5 -> 26a9be57964b520d3a47d8c20db877e9
+  custom:scripting/monoscript/fileName/PoseControl.cs: 609dfc7c8c05a1cf200909bbac757fec -> 4ff0d325328ef40fb1693e34ac3358bf
+  custom:scripting/monoscript/fileName/OpenXRFeatureBuildHooks.cs: 1710c5d7a8e48075c9e4aff8b45f1152 -> da31756dd3c74e69bcd7ed1a1983ed53
+  custom:scripting/monoscript/fileName/HPReverbG2ControllerProfile.cs: 9d8499f0c7d25c6b81dc777a2c71df61 -> 6aadb5e22feaccfa77ef6db6c4d4541c
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/BootConfig.cs: 24b01b5e4e987a969a9c22c0ebea884d -> b2c4d54615a39b14509e601dd0f329ff
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsFeature.cs: 3bba6683d3988347de546d285dd94964 -> d323744d9bc61085862cbc785e1f985c
+  custom:scripting/monoscript/fileName/OpenXRPackageSettings.cs: b11fb0112aeb128e201271bf06e53e96 -> 4f4aaba453bf105fb1c3c3d64247142d
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestMeta.cs: 0665e52998c0deb3bd8028395f9cc405 -> 3b920058e4dd8cbdb95cce4af271f981
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetAttribute.cs: 984b4e8e6598cf2b759dd56f021485ae -> 9e20f05fe0a3688af8836175869f0bb7
+  custom:scripting/monoscript/fileName/FoveatedRenderingFeature.cs: 0e86c0901bc27e397ae214482da57354 -> 3cd591174f2fee5d1b0d6a1875383a9b
+  custom:scripting/monoscript/fileName/HapticControl.cs: 81ffcc968c7774530b274658fb3c363b -> d7a5389cafde2a1337c58e2f0d91a837
+  custom:scripting/monoscript/fileName/MetaQuestFeature.cs: 3ce83f71782e0ea75b31e962ea3efa0c -> b9c317336250afc5bb5fa2c2df269ea6
+  custom:scripting/monoscript/fileName/OpenXRRuntimeSelector.cs: 7e0d7dbc5dab41d73648ca1f9f1a98b5 -> 929d3ce28c815a19c6c335174420bf6b
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsTypes.cs: 48ea32296967fd5d34af1b09b2b71daf -> 5bc9c5b4646eff91646254ce341c6683
+  custom:scripting/monoscript/fileName/OpenXRFeatureEditor.cs: 80fd68feb25104575fb2fab5d957091c -> 01dd3fecc4e9c7ce9fb6af5d0948ba2a
+  custom:scripting/monoscript/fileName/BuildHelperUtils.cs: 8328d1d9a38e1eb013b8e145e6eaf5e2 -> 619773c3d1b7f3f0ca7461f5c27242a8
+  custom:scripting/monoscript/fileName/HandInteractionProfile.cs: 0d2aed2831986eac6f8f9aa17828b9d5 -> 9c7649bd495ee99cc73ddacbe0a8cd95
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestOculus.cs: fb2d868358b34027ef7bebd7c414bb6f -> 1d09740e7edd66fffc5895aae9e385d3
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeature.cs: ca724df07df4d3ac84a3c339b29d867a -> 8b269b64ad1c99e85d7f28185c15f7bb
+  custom:scripting/monoscript/fileName/MetaQuestFeatureBuildHooks.cs: 9faef18f7993e6e1073d79300a2378de -> 2ac755c66ffd4e4b7c22530386a7ba47
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: e813d9c34fda2b2a1d64026f9c02d35e -> a45dfad96fe2dd15398ab47dea74b3b7
+  custom:scripting/monoscript/fileName/OpenXRInput.cs: 22c2d7f1ec78d2a3229acc23c316aa56 -> b351db87f98ee399e568b78e0ed353e3
+  custom:scripting/monoscript/fileName/OpenXRInteractionFeature.cs: cdbb80131a5413ae3319d169bec27823 -> a60484418ad6b497996467bb6f98db73
+  custom:scripting/monoscript/fileName/OpenXREditorSettings.cs: 2445cd97d9c83a89667b220edba88001 -> 321e3a8126bc4b0248cbcecf63892f31
+  custom:scripting/monoscript/fileName/OpenXRProjectValidation.cs: b212a865ce6bc0eec7aa584eb24e0320 -> 181508e149a91a64c6dfdc447b97c322
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.745 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.679 seconds
+Domain Reload Profiling: 2417ms
+	BeginReloadAssembly (226ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (409ms)
+		LoadAssemblies (494ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (30ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1679ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (842ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (125ms)
+			ProcessInitializeOnLoadAttributes (607ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 29.27 ms, found 15 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5888 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 98 unused Assets / (1.8 MB). Loaded Objects now: 6389.
+Memory consumption went from 188.6 MB to 186.8 MB.
+Total: 10.041300 ms (FindLiveObjects: 0.706100 ms CreateObjectMapping: 0.743100 ms MarkObjects: 6.747000 ms  DeleteObjects: 1.843400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/MagnetometerCompass.cs: 0b09d914ed53314ba4b7d98021643620 -> 
+  custom:scripting/monoscript/fileName/DPadInteraction.cs: 95e73fe253040182d7d3a72946b178f3 -> 93f85c8ba74c4199c8fc9b6e8c6fb8a6
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettingsEditor.cs: 432d4287b2c032d3f57733ec7a14ca52 -> 46f7bc9b6667349416d592c92274a2cd
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/UWPCoreWindowBuildHooks.cs: 83747187b120078555c0394b9a9b0ce0 -> 528ee0545204f8083d130ec04efc78bc
+  custom:scripting/monoscript/fileName/MetaQuestFeatureEditor.cs: acb175f41678fa8897fabd924791b0e7 -> fff340053bb2e94334d0d5989f2eb349
+  custom:scripting/monoscript/fileName/PalmPoseInteraction.cs: d1ed093e68224e5cc45274e3ae6adc1c -> 6bd25b6029acb9127f25748cb0b6d2a8
+  custom:scripting/monoscript/fileName/MetaQuestTouchPlusControllerProfile.cs: 4e520896c61257b66b72a7db8b275278 -> 4b9439e11567c27c85546e11bafeabe7
+  custom:scripting/monoscript/fileName/OpenXRRuntime.cs: 41cdbd5bfbc4a71a3067e813237075c2 -> c3a00f9ce6a0283dcb391b83637adf44
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/MetaQuestTouchProControllerProfile.cs: 924a0a20cbec88241d3a6560225c517c -> 9fffae235d4c14901711127c7daeb86c
+  custom:scripting/monoscript/fileName/OpenXRConstants.cs: 62bb241e63691239607e98a1eb79e80e -> f878d042bd3999b796b9387b0c8a1032
+  custom:scripting/monoscript/fileName/OpenXRFeatureUICommon.cs: 461800e5238100664aadc5872df93167 -> 45f7a59cd9c5cd84e28e0f7a429879c2
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/OpenXRLoaderUI.cs: 9a80d2e453353745eb2f0dd55330d851 -> ebd8d704d5e26f054d43886c272cd005
+  custom:scripting/monoscript/fileName/WaitForRestartFinish.cs: c5a146c5b1d306e0748cbca9592361f1 -> 0e76bf389cf347a5d8d6432ec661895f
+  custom:scripting/monoscript/fileName/KHRSimpleControllerProfile.cs: 3b25cc37f550e18bd565ed99a4735dab -> bcdcb81587b2075f7af2f75706b9e69a
+  custom:scripting/monoscript/fileName/OpenXRBuildProcessor.cs: 78ee5da2c331be8992399c1b88b44da9 -> 48dc0e114f75799c0d74bafe70808189
+  custom:scripting/monoscript/fileName/OpenXRFeatureInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/DPadInteractionCustomEditor.cs: 99cd61b34a13338ccbcfea9c8d6abe5b -> d93785eeae2b4d41d39f603bd6f9849d
+  custom:scripting/monoscript/fileName/OpenXRSpaceSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/ConformanceAutomationFeature.cs: cecaa95652b5ef8cb218b1dba74d83f1 -> 97112e825fad9ed87f6a9c7acc231c0b
+  custom:scripting/monoscript/fileName/OpenXRLoaderInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/FeatureHelpers.cs: 04ad13b1b8191b392f3bd1df6ddd9271 -> 0e8d07707daeed1da30b1605e903226b
+  custom:scripting/monoscript/fileName/DebuggerState.cs: 9e1dc0a50db973559c612ce1e515d668 -> 41070b7a08cc178a9ea51324cdaf5b81
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/OpenXRHmd.cs: be9ba1f914b0ca630d830f312e55d947 -> 1624687aa096b40d58d149d9c6304cca
+  custom:scripting/monoscript/fileName/OpenXRMangementSettings.cs: 92bd940a5b14de9463a17a42849426eb -> 5a013b6c45b1e1d06085cb1496493b86
+  custom:scripting/monoscript/fileName/OculusTouchControllerProfile.cs: 30174fa0cf36f963f4ec71c1aeb12f39 -> 03df51b5c781d1980f509408bae72bc8
+  custom:scripting/monoscript/fileName/OpenXRNativeTypes.cs: d5f77ef615de827e223bd481494fbeac -> 11be60823314f621c1b0bb94bf4fe744
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/KnownFeatureSets.cs: ef1e57626e9d494e608dd097a504d985 -> 2cf391597f07a52473981e9cc2b41b67
+  custom:scripting/monoscript/fileName/OpenXRProjectValidationRulesSetup.cs: 25e2d07ebf4abc51d6b13033f9d9631b -> 63c520149123eced22b6028c5ebd9d08
+  custom:scripting/monoscript/fileName/MicrosoftHandInteraction.cs: 4dc4abdfb772f525705d10e2a1807220 -> dac920740153b0163dda0f7e56920e40
+  custom:scripting/monoscript/fileName/RuntimeDebuggerWindow.cs: 410e78f6930c47a47f060ada0f65ea14 -> 0bc1d5ee7ce2553d42d62861471f3c44
+  custom:scripting/monoscript/fileName/PackageSettingsEditor.cs: 3d290d8387d6b7e9107e28c918b35a75 -> 6212fddebb8f67c4da0f50592230839b
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/OpenXRLoader.cs: 0a390cb75d019256a3fc204102cb314c -> 2a03893d4aa4b960c2f49090b4b03a7b
+  custom:scripting/monoscript/fileName/ValveIndexControllerProfile.cs: dcb1a84c7641748e3dbe495d3f7fcacd -> f923b1771c835a70375d3505e818878d
+  custom:scripting/monoscript/fileName/OculusQuestFeatureEditor.cs: caa2240a357715777809c1e155d7fcfc -> af70b82209b4cf6ce20a2da2892dfc5f
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/OpenXRChooseRuntimeLibraries.cs: 310f73dd2546cb472dfd9dd2b709f43e -> 3923c2f1337a35d737ad0192eb46b432
+  custom:scripting/monoscript/fileName/OculusQuestFeature.cs: f4ac8316c0f32dfaffd8fcb19bf24db7 -> 041c3418dd65b8e99ca410c708996814
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetManager.cs: 4e048d6bab7aae2619fe673806cc6ebf -> 4f340a53d115a7e1888d00ddc4cd614b
+  custom:scripting/monoscript/fileName/OpenXRColorSubmissonModeList.cs: c5c371b3c10ce050fcca3ce0bbdf4109 -> 62c3c48199b3c893ece86757b75b0604
+  custom:scripting/monoscript/fileName/OpenXRUtility.cs: c9c08bfbdacbe0dd33e419d1d82db65a -> af9b8bca68ffa2bc69f78ec0da9cf1fd
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/MockRuntime.cs: 4707e1b72a1c680c9bca910cce99580c -> 8e970d93da4762c7d57e9c9dd2b36dbb
+  custom:scripting/monoscript/fileName/OpenXRDevice.cs: f3c3823f4956568d1e9728f978cdcf7b -> 1b3be9b024fb29351711164fb0577202
+  custom:scripting/monoscript/fileName/OpenXRUnityAPI.cs: 45bb7e1c3ff6f74b6c2cddf5d0db4aef -> 95d0f03221767acb8a4a43279af12154
+  custom:scripting/monoscript/fileName/HTCViveControllerProfile.cs: 68cbea6a75bb808962ef4679852274fe -> 575b921c71649e99576a05f0add9cf5d
+  custom:scripting/monoscript/fileName/BootConfigBuilder.cs: 80cbd1d6b38400b696adb897e5751311 -> a174d8870c7a69fabc7d42a75b0f23aa
+  custom:scripting/monoscript/fileName/OpenXRRenderSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/EyeGazeInteraction.cs: df93ecad6ff84040ea811a409734aecf -> dc1f12620c8656649cfc16f13969f5fa
+  custom:scripting/monoscript/fileName/OpenXRAnalytics.cs: cd04f750fae989b24a13eb8b7fc568c7 -> 67d5de80ae8e3ee46bb1b4907783d54c
+  custom:scripting/monoscript/fileName/MicrosoftMotionControllerProfile.cs: 047322156082fa203c5ec2a3d6b58d79 -> 6dcaa2067404bed7771687f2f9dfa057
+  custom:scripting/monoscript/fileName/OpenXRRestarter.cs: 42c4a284fa4bc016f7554a7523fe6083 -> c236f3f43c026f409512d203b81e6184
+  custom:scripting/monoscript/fileName/OpenXRFeatureAttribute.cs: 5c95bca3ecb995bf54767d3bdb396139 -> 99305d666df750d87e7264e3c7ae4f2a
+  custom:scripting/monoscript/fileName/OpenXRLoaderNoPreInit.cs: 7ea37fe40035155d109f06ed1e31bdc0 -> 8f7a064e1e0bb6e17b9f5d171fe53dfc
+  custom:scripting/monoscript/fileName/HandCommonPosesInteraction.cs: a9ba4ac130365bd9a98d3249459ad095 -> c984aa78f460c3bf39ec56bc9a0a414a
+  custom:scripting/monoscript/fileName/OpenXRDiagnosticReport.cs: 81b79e6d53653bad181c2294c861dd29 -> f43e8307d90025ed39c346ed63d1208d
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeatureEditor.cs: 78d558165618d978f07c916ce9e6e2f5 -> 26a9be57964b520d3a47d8c20db877e9
+  custom:scripting/monoscript/fileName/PoseControl.cs: 609dfc7c8c05a1cf200909bbac757fec -> 4ff0d325328ef40fb1693e34ac3358bf
+  custom:scripting/monoscript/fileName/OpenXRFeatureBuildHooks.cs: 1710c5d7a8e48075c9e4aff8b45f1152 -> da31756dd3c74e69bcd7ed1a1983ed53
+  custom:scripting/monoscript/fileName/HPReverbG2ControllerProfile.cs: 9d8499f0c7d25c6b81dc777a2c71df61 -> 6aadb5e22feaccfa77ef6db6c4d4541c
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/BootConfig.cs: 24b01b5e4e987a969a9c22c0ebea884d -> b2c4d54615a39b14509e601dd0f329ff
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsFeature.cs: 3bba6683d3988347de546d285dd94964 -> d323744d9bc61085862cbc785e1f985c
+  custom:scripting/monoscript/fileName/OpenXRPackageSettings.cs: b11fb0112aeb128e201271bf06e53e96 -> 4f4aaba453bf105fb1c3c3d64247142d
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestMeta.cs: 0665e52998c0deb3bd8028395f9cc405 -> 3b920058e4dd8cbdb95cce4af271f981
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetAttribute.cs: 984b4e8e6598cf2b759dd56f021485ae -> 9e20f05fe0a3688af8836175869f0bb7
+  custom:scripting/monoscript/fileName/FoveatedRenderingFeature.cs: 0e86c0901bc27e397ae214482da57354 -> 3cd591174f2fee5d1b0d6a1875383a9b
+  custom:scripting/monoscript/fileName/HapticControl.cs: 81ffcc968c7774530b274658fb3c363b -> d7a5389cafde2a1337c58e2f0d91a837
+  custom:scripting/monoscript/fileName/MetaQuestFeature.cs: 3ce83f71782e0ea75b31e962ea3efa0c -> b9c317336250afc5bb5fa2c2df269ea6
+  custom:scripting/monoscript/fileName/OpenXRRuntimeSelector.cs: 7e0d7dbc5dab41d73648ca1f9f1a98b5 -> 929d3ce28c815a19c6c335174420bf6b
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsTypes.cs: 48ea32296967fd5d34af1b09b2b71daf -> 5bc9c5b4646eff91646254ce341c6683
+  custom:scripting/monoscript/fileName/OpenXRFeatureEditor.cs: 80fd68feb25104575fb2fab5d957091c -> 01dd3fecc4e9c7ce9fb6af5d0948ba2a
+  custom:scripting/monoscript/fileName/BuildHelperUtils.cs: 8328d1d9a38e1eb013b8e145e6eaf5e2 -> 619773c3d1b7f3f0ca7461f5c27242a8
+  custom:scripting/monoscript/fileName/HandInteractionProfile.cs: 0d2aed2831986eac6f8f9aa17828b9d5 -> 9c7649bd495ee99cc73ddacbe0a8cd95
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestOculus.cs: fb2d868358b34027ef7bebd7c414bb6f -> 1d09740e7edd66fffc5895aae9e385d3
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeature.cs: ca724df07df4d3ac84a3c339b29d867a -> 8b269b64ad1c99e85d7f28185c15f7bb
+  custom:scripting/monoscript/fileName/MetaQuestFeatureBuildHooks.cs: 9faef18f7993e6e1073d79300a2378de -> 2ac755c66ffd4e4b7c22530386a7ba47
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: e813d9c34fda2b2a1d64026f9c02d35e -> a45dfad96fe2dd15398ab47dea74b3b7
+  custom:scripting/monoscript/fileName/OpenXRInput.cs: 22c2d7f1ec78d2a3229acc23c316aa56 -> b351db87f98ee399e568b78e0ed353e3
+  custom:scripting/monoscript/fileName/OpenXRInteractionFeature.cs: cdbb80131a5413ae3319d169bec27823 -> a60484418ad6b497996467bb6f98db73
+  custom:scripting/monoscript/fileName/OpenXREditorSettings.cs: 2445cd97d9c83a89667b220edba88001 -> 321e3a8126bc4b0248cbcecf63892f31
+  custom:scripting/monoscript/fileName/OpenXRProjectValidation.cs: b212a865ce6bc0eec7aa584eb24e0320 -> 181508e149a91a64c6dfdc447b97c322
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.838 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.690 seconds
+Domain Reload Profiling: 2520ms
+	BeginReloadAssembly (246ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (463ms)
+		LoadAssemblies (566ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (32ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1691ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (859ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (120ms)
+			ProcessInitializeOnLoadAttributes (608ms)
+			ProcessInitializeOnLoadMethodAttributes (90ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 30.94 ms, found 15 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5888 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 98 unused Assets / (1.9 MB). Loaded Objects now: 6393.
+Memory consumption went from 188.7 MB to 186.8 MB.
+Total: 11.407000 ms (FindLiveObjects: 1.076500 ms CreateObjectMapping: 0.899200 ms MarkObjects: 7.534000 ms  DeleteObjects: 1.895300 ms)
+
+Prepare: number of updated asset objects reloaded= 3
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/MagnetometerCompass.cs: 0b09d914ed53314ba4b7d98021643620 -> 
+  custom:scripting/monoscript/fileName/DPadInteraction.cs: 95e73fe253040182d7d3a72946b178f3 -> 93f85c8ba74c4199c8fc9b6e8c6fb8a6
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettingsEditor.cs: 432d4287b2c032d3f57733ec7a14ca52 -> 46f7bc9b6667349416d592c92274a2cd
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/UWPCoreWindowBuildHooks.cs: 83747187b120078555c0394b9a9b0ce0 -> 528ee0545204f8083d130ec04efc78bc
+  custom:scripting/monoscript/fileName/MetaQuestFeatureEditor.cs: acb175f41678fa8897fabd924791b0e7 -> fff340053bb2e94334d0d5989f2eb349
+  custom:scripting/monoscript/fileName/PalmPoseInteraction.cs: d1ed093e68224e5cc45274e3ae6adc1c -> 6bd25b6029acb9127f25748cb0b6d2a8
+  custom:scripting/monoscript/fileName/MetaQuestTouchPlusControllerProfile.cs: 4e520896c61257b66b72a7db8b275278 -> 4b9439e11567c27c85546e11bafeabe7
+  custom:scripting/monoscript/fileName/OpenXRRuntime.cs: 41cdbd5bfbc4a71a3067e813237075c2 -> c3a00f9ce6a0283dcb391b83637adf44
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/MetaQuestTouchProControllerProfile.cs: 924a0a20cbec88241d3a6560225c517c -> 9fffae235d4c14901711127c7daeb86c
+  custom:scripting/monoscript/fileName/OpenXRConstants.cs: 62bb241e63691239607e98a1eb79e80e -> f878d042bd3999b796b9387b0c8a1032
+  custom:scripting/monoscript/fileName/OpenXRFeatureUICommon.cs: 461800e5238100664aadc5872df93167 -> 45f7a59cd9c5cd84e28e0f7a429879c2
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/OpenXRLoaderUI.cs: 9a80d2e453353745eb2f0dd55330d851 -> ebd8d704d5e26f054d43886c272cd005
+  custom:scripting/monoscript/fileName/WaitForRestartFinish.cs: c5a146c5b1d306e0748cbca9592361f1 -> 0e76bf389cf347a5d8d6432ec661895f
+  custom:scripting/monoscript/fileName/KHRSimpleControllerProfile.cs: 3b25cc37f550e18bd565ed99a4735dab -> bcdcb81587b2075f7af2f75706b9e69a
+  custom:scripting/monoscript/fileName/OpenXRBuildProcessor.cs: 78ee5da2c331be8992399c1b88b44da9 -> 48dc0e114f75799c0d74bafe70808189
+  custom:scripting/monoscript/fileName/OpenXRFeatureInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/DPadInteractionCustomEditor.cs: 99cd61b34a13338ccbcfea9c8d6abe5b -> d93785eeae2b4d41d39f603bd6f9849d
+  custom:scripting/monoscript/fileName/OpenXRSpaceSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/ConformanceAutomationFeature.cs: cecaa95652b5ef8cb218b1dba74d83f1 -> 97112e825fad9ed87f6a9c7acc231c0b
+  custom:scripting/monoscript/fileName/OpenXRLoaderInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/FeatureHelpers.cs: 04ad13b1b8191b392f3bd1df6ddd9271 -> 0e8d07707daeed1da30b1605e903226b
+  custom:scripting/monoscript/fileName/DebuggerState.cs: 9e1dc0a50db973559c612ce1e515d668 -> 41070b7a08cc178a9ea51324cdaf5b81
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/OpenXRHmd.cs: be9ba1f914b0ca630d830f312e55d947 -> 1624687aa096b40d58d149d9c6304cca
+  custom:scripting/monoscript/fileName/OpenXRMangementSettings.cs: 92bd940a5b14de9463a17a42849426eb -> 5a013b6c45b1e1d06085cb1496493b86
+  custom:scripting/monoscript/fileName/OculusTouchControllerProfile.cs: 30174fa0cf36f963f4ec71c1aeb12f39 -> 03df51b5c781d1980f509408bae72bc8
+  custom:scripting/monoscript/fileName/OpenXRNativeTypes.cs: d5f77ef615de827e223bd481494fbeac -> 11be60823314f621c1b0bb94bf4fe744
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/KnownFeatureSets.cs: ef1e57626e9d494e608dd097a504d985 -> 2cf391597f07a52473981e9cc2b41b67
+  custom:scripting/monoscript/fileName/OpenXRProjectValidationRulesSetup.cs: 25e2d07ebf4abc51d6b13033f9d9631b -> 63c520149123eced22b6028c5ebd9d08
+  custom:scripting/monoscript/fileName/MicrosoftHandInteraction.cs: 4dc4abdfb772f525705d10e2a1807220 -> dac920740153b0163dda0f7e56920e40
+  custom:scripting/monoscript/fileName/RuntimeDebuggerWindow.cs: 410e78f6930c47a47f060ada0f65ea14 -> 0bc1d5ee7ce2553d42d62861471f3c44
+  custom:scripting/monoscript/fileName/PackageSettingsEditor.cs: 3d290d8387d6b7e9107e28c918b35a75 -> 6212fddebb8f67c4da0f50592230839b
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/OpenXRLoader.cs: 0a390cb75d019256a3fc204102cb314c -> 2a03893d4aa4b960c2f49090b4b03a7b
+  custom:scripting/monoscript/fileName/ValveIndexControllerProfile.cs: dcb1a84c7641748e3dbe495d3f7fcacd -> f923b1771c835a70375d3505e818878d
+  custom:scripting/monoscript/fileName/OculusQuestFeatureEditor.cs: caa2240a357715777809c1e155d7fcfc -> af70b82209b4cf6ce20a2da2892dfc5f
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/OpenXRChooseRuntimeLibraries.cs: 310f73dd2546cb472dfd9dd2b709f43e -> 3923c2f1337a35d737ad0192eb46b432
+  custom:scripting/monoscript/fileName/OculusQuestFeature.cs: f4ac8316c0f32dfaffd8fcb19bf24db7 -> 041c3418dd65b8e99ca410c708996814
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetManager.cs: 4e048d6bab7aae2619fe673806cc6ebf -> 4f340a53d115a7e1888d00ddc4cd614b
+  custom:scripting/monoscript/fileName/OpenXRColorSubmissonModeList.cs: c5c371b3c10ce050fcca3ce0bbdf4109 -> 62c3c48199b3c893ece86757b75b0604
+  custom:scripting/monoscript/fileName/OpenXRUtility.cs: c9c08bfbdacbe0dd33e419d1d82db65a -> af9b8bca68ffa2bc69f78ec0da9cf1fd
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/MockRuntime.cs: 4707e1b72a1c680c9bca910cce99580c -> 8e970d93da4762c7d57e9c9dd2b36dbb
+  custom:scripting/monoscript/fileName/OpenXRDevice.cs: f3c3823f4956568d1e9728f978cdcf7b -> 1b3be9b024fb29351711164fb0577202
+  custom:scripting/monoscript/fileName/OpenXRUnityAPI.cs: 45bb7e1c3ff6f74b6c2cddf5d0db4aef -> 95d0f03221767acb8a4a43279af12154
+  custom:scripting/monoscript/fileName/HTCViveControllerProfile.cs: 68cbea6a75bb808962ef4679852274fe -> 575b921c71649e99576a05f0add9cf5d
+  custom:scripting/monoscript/fileName/BootConfigBuilder.cs: 80cbd1d6b38400b696adb897e5751311 -> a174d8870c7a69fabc7d42a75b0f23aa
+  custom:scripting/monoscript/fileName/OpenXRRenderSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/EyeGazeInteraction.cs: df93ecad6ff84040ea811a409734aecf -> dc1f12620c8656649cfc16f13969f5fa
+  custom:scripting/monoscript/fileName/OpenXRAnalytics.cs: cd04f750fae989b24a13eb8b7fc568c7 -> 67d5de80ae8e3ee46bb1b4907783d54c
+  custom:scripting/monoscript/fileName/MicrosoftMotionControllerProfile.cs: 047322156082fa203c5ec2a3d6b58d79 -> 6dcaa2067404bed7771687f2f9dfa057
+  custom:scripting/monoscript/fileName/OpenXRRestarter.cs: 42c4a284fa4bc016f7554a7523fe6083 -> c236f3f43c026f409512d203b81e6184
+  custom:scripting/monoscript/fileName/OpenXRFeatureAttribute.cs: 5c95bca3ecb995bf54767d3bdb396139 -> 99305d666df750d87e7264e3c7ae4f2a
+  custom:scripting/monoscript/fileName/OpenXRLoaderNoPreInit.cs: 7ea37fe40035155d109f06ed1e31bdc0 -> 8f7a064e1e0bb6e17b9f5d171fe53dfc
+  custom:scripting/monoscript/fileName/HandCommonPosesInteraction.cs: a9ba4ac130365bd9a98d3249459ad095 -> c984aa78f460c3bf39ec56bc9a0a414a
+  custom:scripting/monoscript/fileName/OpenXRDiagnosticReport.cs: 81b79e6d53653bad181c2294c861dd29 -> f43e8307d90025ed39c346ed63d1208d
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeatureEditor.cs: 78d558165618d978f07c916ce9e6e2f5 -> 26a9be57964b520d3a47d8c20db877e9
+  custom:scripting/monoscript/fileName/PoseControl.cs: 609dfc7c8c05a1cf200909bbac757fec -> 4ff0d325328ef40fb1693e34ac3358bf
+  custom:scripting/monoscript/fileName/OpenXRFeatureBuildHooks.cs: 1710c5d7a8e48075c9e4aff8b45f1152 -> da31756dd3c74e69bcd7ed1a1983ed53
+  custom:scripting/monoscript/fileName/HPReverbG2ControllerProfile.cs: 9d8499f0c7d25c6b81dc777a2c71df61 -> 6aadb5e22feaccfa77ef6db6c4d4541c
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/BootConfig.cs: 24b01b5e4e987a969a9c22c0ebea884d -> b2c4d54615a39b14509e601dd0f329ff
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsFeature.cs: 3bba6683d3988347de546d285dd94964 -> d323744d9bc61085862cbc785e1f985c
+  custom:scripting/monoscript/fileName/OpenXRPackageSettings.cs: b11fb0112aeb128e201271bf06e53e96 -> 4f4aaba453bf105fb1c3c3d64247142d
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestMeta.cs: 0665e52998c0deb3bd8028395f9cc405 -> 3b920058e4dd8cbdb95cce4af271f981
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetAttribute.cs: 984b4e8e6598cf2b759dd56f021485ae -> 9e20f05fe0a3688af8836175869f0bb7
+  custom:scripting/monoscript/fileName/FoveatedRenderingFeature.cs: 0e86c0901bc27e397ae214482da57354 -> 3cd591174f2fee5d1b0d6a1875383a9b
+  custom:scripting/monoscript/fileName/HapticControl.cs: 81ffcc968c7774530b274658fb3c363b -> d7a5389cafde2a1337c58e2f0d91a837
+  custom:scripting/monoscript/fileName/MetaQuestFeature.cs: 3ce83f71782e0ea75b31e962ea3efa0c -> b9c317336250afc5bb5fa2c2df269ea6
+  custom:scripting/monoscript/fileName/OpenXRRuntimeSelector.cs: 7e0d7dbc5dab41d73648ca1f9f1a98b5 -> 929d3ce28c815a19c6c335174420bf6b
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsTypes.cs: 48ea32296967fd5d34af1b09b2b71daf -> 5bc9c5b4646eff91646254ce341c6683
+  custom:scripting/monoscript/fileName/OpenXRFeatureEditor.cs: 80fd68feb25104575fb2fab5d957091c -> 01dd3fecc4e9c7ce9fb6af5d0948ba2a
+  custom:scripting/monoscript/fileName/BuildHelperUtils.cs: 8328d1d9a38e1eb013b8e145e6eaf5e2 -> 619773c3d1b7f3f0ca7461f5c27242a8
+  custom:scripting/monoscript/fileName/HandInteractionProfile.cs: 0d2aed2831986eac6f8f9aa17828b9d5 -> 9c7649bd495ee99cc73ddacbe0a8cd95
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestOculus.cs: fb2d868358b34027ef7bebd7c414bb6f -> 1d09740e7edd66fffc5895aae9e385d3
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeature.cs: ca724df07df4d3ac84a3c339b29d867a -> 8b269b64ad1c99e85d7f28185c15f7bb
+  custom:scripting/monoscript/fileName/MetaQuestFeatureBuildHooks.cs: 9faef18f7993e6e1073d79300a2378de -> 2ac755c66ffd4e4b7c22530386a7ba47
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: e813d9c34fda2b2a1d64026f9c02d35e -> a45dfad96fe2dd15398ab47dea74b3b7
+  custom:scripting/monoscript/fileName/OpenXRInput.cs: 22c2d7f1ec78d2a3229acc23c316aa56 -> b351db87f98ee399e568b78e0ed353e3
+  custom:scripting/monoscript/fileName/OpenXRInteractionFeature.cs: cdbb80131a5413ae3319d169bec27823 -> a60484418ad6b497996467bb6f98db73
+  custom:scripting/monoscript/fileName/OpenXREditorSettings.cs: 2445cd97d9c83a89667b220edba88001 -> 321e3a8126bc4b0248cbcecf63892f31
+  custom:scripting/monoscript/fileName/OpenXRProjectValidation.cs: b212a865ce6bc0eec7aa584eb24e0320 -> 181508e149a91a64c6dfdc447b97c322
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  3.153 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  4.695 seconds
+Domain Reload Profiling: 7852ms
+	BeginReloadAssembly (1045ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (35ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (440ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (1953ms)
+		LoadAssemblies (2087ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (137ms)
+			TypeCache.Refresh (69ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (64ms)
+	FinalizeReload (4697ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1514ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (173ms)
+			ProcessInitializeOnLoadAttributes (1118ms)
+			ProcessInitializeOnLoadMethodAttributes (161ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 115.20 ms, found 15 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5888 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 98 unused Assets / (1.8 MB). Loaded Objects now: 6398.
+Memory consumption went from 188.6 MB to 186.8 MB.
+Total: 27.335200 ms (FindLiveObjects: 1.640400 ms CreateObjectMapping: 3.544100 ms MarkObjects: 18.983600 ms  DeleteObjects: 3.165400 ms)
+
+Prepare: number of updated asset objects reloaded= 72
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/MagnetometerCompass.cs: 0b09d914ed53314ba4b7d98021643620 -> 
+  custom:scripting/monoscript/fileName/DPadInteraction.cs: 95e73fe253040182d7d3a72946b178f3 -> 93f85c8ba74c4199c8fc9b6e8c6fb8a6
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettingsEditor.cs: 432d4287b2c032d3f57733ec7a14ca52 -> 46f7bc9b6667349416d592c92274a2cd
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/UWPCoreWindowBuildHooks.cs: 83747187b120078555c0394b9a9b0ce0 -> 528ee0545204f8083d130ec04efc78bc
+  custom:scripting/monoscript/fileName/MetaQuestFeatureEditor.cs: acb175f41678fa8897fabd924791b0e7 -> fff340053bb2e94334d0d5989f2eb349
+  custom:scripting/monoscript/fileName/PalmPoseInteraction.cs: d1ed093e68224e5cc45274e3ae6adc1c -> 6bd25b6029acb9127f25748cb0b6d2a8
+  custom:scripting/monoscript/fileName/MetaQuestTouchPlusControllerProfile.cs: 4e520896c61257b66b72a7db8b275278 -> 4b9439e11567c27c85546e11bafeabe7
+  custom:scripting/monoscript/fileName/OpenXRRuntime.cs: 41cdbd5bfbc4a71a3067e813237075c2 -> c3a00f9ce6a0283dcb391b83637adf44
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/MetaQuestTouchProControllerProfile.cs: 924a0a20cbec88241d3a6560225c517c -> 9fffae235d4c14901711127c7daeb86c
+  custom:scripting/monoscript/fileName/OpenXRConstants.cs: 62bb241e63691239607e98a1eb79e80e -> f878d042bd3999b796b9387b0c8a1032
+  custom:scripting/monoscript/fileName/OpenXRFeatureUICommon.cs: 461800e5238100664aadc5872df93167 -> 45f7a59cd9c5cd84e28e0f7a429879c2
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/OpenXRLoaderUI.cs: 9a80d2e453353745eb2f0dd55330d851 -> ebd8d704d5e26f054d43886c272cd005
+  custom:scripting/monoscript/fileName/WaitForRestartFinish.cs: c5a146c5b1d306e0748cbca9592361f1 -> 0e76bf389cf347a5d8d6432ec661895f
+  custom:scripting/monoscript/fileName/KHRSimpleControllerProfile.cs: 3b25cc37f550e18bd565ed99a4735dab -> bcdcb81587b2075f7af2f75706b9e69a
+  custom:scripting/monoscript/fileName/OpenXRBuildProcessor.cs: 78ee5da2c331be8992399c1b88b44da9 -> 48dc0e114f75799c0d74bafe70808189
+  custom:scripting/monoscript/fileName/OpenXRFeatureInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/DPadInteractionCustomEditor.cs: 99cd61b34a13338ccbcfea9c8d6abe5b -> d93785eeae2b4d41d39f603bd6f9849d
+  custom:scripting/monoscript/fileName/OpenXRSpaceSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/ConformanceAutomationFeature.cs: cecaa95652b5ef8cb218b1dba74d83f1 -> 97112e825fad9ed87f6a9c7acc231c0b
+  custom:scripting/monoscript/fileName/OpenXRLoaderInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/FeatureHelpers.cs: 04ad13b1b8191b392f3bd1df6ddd9271 -> 0e8d07707daeed1da30b1605e903226b
+  custom:scripting/monoscript/fileName/DebuggerState.cs: 9e1dc0a50db973559c612ce1e515d668 -> 41070b7a08cc178a9ea51324cdaf5b81
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/OpenXRHmd.cs: be9ba1f914b0ca630d830f312e55d947 -> 1624687aa096b40d58d149d9c6304cca
+  custom:scripting/monoscript/fileName/OpenXRMangementSettings.cs: 92bd940a5b14de9463a17a42849426eb -> 5a013b6c45b1e1d06085cb1496493b86
+  custom:scripting/monoscript/fileName/OculusTouchControllerProfile.cs: 30174fa0cf36f963f4ec71c1aeb12f39 -> 03df51b5c781d1980f509408bae72bc8
+  custom:scripting/monoscript/fileName/OpenXRNativeTypes.cs: d5f77ef615de827e223bd481494fbeac -> 11be60823314f621c1b0bb94bf4fe744
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/KnownFeatureSets.cs: ef1e57626e9d494e608dd097a504d985 -> 2cf391597f07a52473981e9cc2b41b67
+  custom:scripting/monoscript/fileName/OpenXRProjectValidationRulesSetup.cs: 25e2d07ebf4abc51d6b13033f9d9631b -> 63c520149123eced22b6028c5ebd9d08
+  custom:scripting/monoscript/fileName/MicrosoftHandInteraction.cs: 4dc4abdfb772f525705d10e2a1807220 -> dac920740153b0163dda0f7e56920e40
+  custom:scripting/monoscript/fileName/RuntimeDebuggerWindow.cs: 410e78f6930c47a47f060ada0f65ea14 -> 0bc1d5ee7ce2553d42d62861471f3c44
+  custom:scripting/monoscript/fileName/PackageSettingsEditor.cs: 3d290d8387d6b7e9107e28c918b35a75 -> 6212fddebb8f67c4da0f50592230839b
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/OpenXRLoader.cs: 0a390cb75d019256a3fc204102cb314c -> 2a03893d4aa4b960c2f49090b4b03a7b
+  custom:scripting/monoscript/fileName/ValveIndexControllerProfile.cs: dcb1a84c7641748e3dbe495d3f7fcacd -> f923b1771c835a70375d3505e818878d
+  custom:scripting/monoscript/fileName/OculusQuestFeatureEditor.cs: caa2240a357715777809c1e155d7fcfc -> af70b82209b4cf6ce20a2da2892dfc5f
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/OpenXRChooseRuntimeLibraries.cs: 310f73dd2546cb472dfd9dd2b709f43e -> 3923c2f1337a35d737ad0192eb46b432
+  custom:scripting/monoscript/fileName/OculusQuestFeature.cs: f4ac8316c0f32dfaffd8fcb19bf24db7 -> 041c3418dd65b8e99ca410c708996814
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetManager.cs: 4e048d6bab7aae2619fe673806cc6ebf -> 4f340a53d115a7e1888d00ddc4cd614b
+  custom:scripting/monoscript/fileName/OpenXRColorSubmissonModeList.cs: c5c371b3c10ce050fcca3ce0bbdf4109 -> 62c3c48199b3c893ece86757b75b0604
+  custom:scripting/monoscript/fileName/OpenXRUtility.cs: c9c08bfbdacbe0dd33e419d1d82db65a -> af9b8bca68ffa2bc69f78ec0da9cf1fd
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/MockRuntime.cs: 4707e1b72a1c680c9bca910cce99580c -> 8e970d93da4762c7d57e9c9dd2b36dbb
+  custom:scripting/monoscript/fileName/OpenXRDevice.cs: f3c3823f4956568d1e9728f978cdcf7b -> 1b3be9b024fb29351711164fb0577202
+  custom:scripting/monoscript/fileName/OpenXRUnityAPI.cs: 45bb7e1c3ff6f74b6c2cddf5d0db4aef -> 95d0f03221767acb8a4a43279af12154
+  custom:scripting/monoscript/fileName/HTCViveControllerProfile.cs: 68cbea6a75bb808962ef4679852274fe -> 575b921c71649e99576a05f0add9cf5d
+  custom:scripting/monoscript/fileName/BootConfigBuilder.cs: 80cbd1d6b38400b696adb897e5751311 -> a174d8870c7a69fabc7d42a75b0f23aa
+  custom:scripting/monoscript/fileName/OpenXRRenderSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/EyeGazeInteraction.cs: df93ecad6ff84040ea811a409734aecf -> dc1f12620c8656649cfc16f13969f5fa
+  custom:scripting/monoscript/fileName/OpenXRAnalytics.cs: cd04f750fae989b24a13eb8b7fc568c7 -> 67d5de80ae8e3ee46bb1b4907783d54c
+  custom:scripting/monoscript/fileName/MicrosoftMotionControllerProfile.cs: 047322156082fa203c5ec2a3d6b58d79 -> 6dcaa2067404bed7771687f2f9dfa057
+  custom:scripting/monoscript/fileName/OpenXRRestarter.cs: 42c4a284fa4bc016f7554a7523fe6083 -> c236f3f43c026f409512d203b81e6184
+  custom:scripting/monoscript/fileName/OpenXRFeatureAttribute.cs: 5c95bca3ecb995bf54767d3bdb396139 -> 99305d666df750d87e7264e3c7ae4f2a
+  custom:scripting/monoscript/fileName/OpenXRLoaderNoPreInit.cs: 7ea37fe40035155d109f06ed1e31bdc0 -> 8f7a064e1e0bb6e17b9f5d171fe53dfc
+  custom:scripting/monoscript/fileName/HandCommonPosesInteraction.cs: a9ba4ac130365bd9a98d3249459ad095 -> c984aa78f460c3bf39ec56bc9a0a414a
+  custom:scripting/monoscript/fileName/OpenXRDiagnosticReport.cs: 81b79e6d53653bad181c2294c861dd29 -> f43e8307d90025ed39c346ed63d1208d
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeatureEditor.cs: 78d558165618d978f07c916ce9e6e2f5 -> 26a9be57964b520d3a47d8c20db877e9
+  custom:scripting/monoscript/fileName/PoseControl.cs: 609dfc7c8c05a1cf200909bbac757fec -> 4ff0d325328ef40fb1693e34ac3358bf
+  custom:scripting/monoscript/fileName/OpenXRFeatureBuildHooks.cs: 1710c5d7a8e48075c9e4aff8b45f1152 -> da31756dd3c74e69bcd7ed1a1983ed53
+  custom:scripting/monoscript/fileName/HPReverbG2ControllerProfile.cs: 9d8499f0c7d25c6b81dc777a2c71df61 -> 6aadb5e22feaccfa77ef6db6c4d4541c
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/BootConfig.cs: 24b01b5e4e987a969a9c22c0ebea884d -> b2c4d54615a39b14509e601dd0f329ff
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsFeature.cs: 3bba6683d3988347de546d285dd94964 -> d323744d9bc61085862cbc785e1f985c
+  custom:scripting/monoscript/fileName/OpenXRPackageSettings.cs: b11fb0112aeb128e201271bf06e53e96 -> 4f4aaba453bf105fb1c3c3d64247142d
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestMeta.cs: 0665e52998c0deb3bd8028395f9cc405 -> 3b920058e4dd8cbdb95cce4af271f981
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetAttribute.cs: 984b4e8e6598cf2b759dd56f021485ae -> 9e20f05fe0a3688af8836175869f0bb7
+  custom:scripting/monoscript/fileName/FoveatedRenderingFeature.cs: 0e86c0901bc27e397ae214482da57354 -> 3cd591174f2fee5d1b0d6a1875383a9b
+  custom:scripting/monoscript/fileName/HapticControl.cs: 81ffcc968c7774530b274658fb3c363b -> d7a5389cafde2a1337c58e2f0d91a837
+  custom:scripting/monoscript/fileName/MetaQuestFeature.cs: 3ce83f71782e0ea75b31e962ea3efa0c -> b9c317336250afc5bb5fa2c2df269ea6
+  custom:scripting/monoscript/fileName/OpenXRRuntimeSelector.cs: 7e0d7dbc5dab41d73648ca1f9f1a98b5 -> 929d3ce28c815a19c6c335174420bf6b
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsTypes.cs: 48ea32296967fd5d34af1b09b2b71daf -> 5bc9c5b4646eff91646254ce341c6683
+  custom:scripting/monoscript/fileName/OpenXRFeatureEditor.cs: 80fd68feb25104575fb2fab5d957091c -> 01dd3fecc4e9c7ce9fb6af5d0948ba2a
+  custom:scripting/monoscript/fileName/BuildHelperUtils.cs: 8328d1d9a38e1eb013b8e145e6eaf5e2 -> 619773c3d1b7f3f0ca7461f5c27242a8
+  custom:scripting/monoscript/fileName/HandInteractionProfile.cs: 0d2aed2831986eac6f8f9aa17828b9d5 -> 9c7649bd495ee99cc73ddacbe0a8cd95
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestOculus.cs: fb2d868358b34027ef7bebd7c414bb6f -> 1d09740e7edd66fffc5895aae9e385d3
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeature.cs: ca724df07df4d3ac84a3c339b29d867a -> 8b269b64ad1c99e85d7f28185c15f7bb
+  custom:scripting/monoscript/fileName/MetaQuestFeatureBuildHooks.cs: 9faef18f7993e6e1073d79300a2378de -> 2ac755c66ffd4e4b7c22530386a7ba47
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: e813d9c34fda2b2a1d64026f9c02d35e -> a45dfad96fe2dd15398ab47dea74b3b7
+  custom:scripting/monoscript/fileName/OpenXRInput.cs: 22c2d7f1ec78d2a3229acc23c316aa56 -> b351db87f98ee399e568b78e0ed353e3
+  custom:scripting/monoscript/fileName/OpenXRInteractionFeature.cs: cdbb80131a5413ae3319d169bec27823 -> a60484418ad6b497996467bb6f98db73
+  custom:scripting/monoscript/fileName/OpenXREditorSettings.cs: 2445cd97d9c83a89667b220edba88001 -> 321e3a8126bc4b0248cbcecf63892f31
+  custom:scripting/monoscript/fileName/OpenXRProjectValidation.cs: b212a865ce6bc0eec7aa584eb24e0320 -> 181508e149a91a64c6dfdc447b97c322
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.748 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.846 seconds
+Domain Reload Profiling: 2588ms
+	BeginReloadAssembly (211ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (432ms)
+		LoadAssemblies (517ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (34ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1847ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (962ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (129ms)
+			ProcessInitializeOnLoadAttributes (656ms)
+			ProcessInitializeOnLoadMethodAttributes (124ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 34.50 ms, found 15 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5888 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 98 unused Assets / (1.9 MB). Loaded Objects now: 6402.
+Memory consumption went from 188.7 MB to 186.8 MB.
+Total: 10.219000 ms (FindLiveObjects: 1.267100 ms CreateObjectMapping: 0.664400 ms MarkObjects: 6.461600 ms  DeleteObjects: 1.824400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/MagnetometerCompass.cs: 0b09d914ed53314ba4b7d98021643620 -> 
+  custom:scripting/monoscript/fileName/DPadInteraction.cs: 95e73fe253040182d7d3a72946b178f3 -> 93f85c8ba74c4199c8fc9b6e8c6fb8a6
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettingsEditor.cs: 432d4287b2c032d3f57733ec7a14ca52 -> 46f7bc9b6667349416d592c92274a2cd
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/UWPCoreWindowBuildHooks.cs: 83747187b120078555c0394b9a9b0ce0 -> 528ee0545204f8083d130ec04efc78bc
+  custom:scripting/monoscript/fileName/MetaQuestFeatureEditor.cs: acb175f41678fa8897fabd924791b0e7 -> fff340053bb2e94334d0d5989f2eb349
+  custom:scripting/monoscript/fileName/PalmPoseInteraction.cs: d1ed093e68224e5cc45274e3ae6adc1c -> 6bd25b6029acb9127f25748cb0b6d2a8
+  custom:scripting/monoscript/fileName/MetaQuestTouchPlusControllerProfile.cs: 4e520896c61257b66b72a7db8b275278 -> 4b9439e11567c27c85546e11bafeabe7
+  custom:scripting/monoscript/fileName/OpenXRRuntime.cs: 41cdbd5bfbc4a71a3067e813237075c2 -> c3a00f9ce6a0283dcb391b83637adf44
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/MetaQuestTouchProControllerProfile.cs: 924a0a20cbec88241d3a6560225c517c -> 9fffae235d4c14901711127c7daeb86c
+  custom:scripting/monoscript/fileName/OpenXRConstants.cs: 62bb241e63691239607e98a1eb79e80e -> f878d042bd3999b796b9387b0c8a1032
+  custom:scripting/monoscript/fileName/OpenXRFeatureUICommon.cs: 461800e5238100664aadc5872df93167 -> 45f7a59cd9c5cd84e28e0f7a429879c2
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/OpenXRLoaderUI.cs: 9a80d2e453353745eb2f0dd55330d851 -> ebd8d704d5e26f054d43886c272cd005
+  custom:scripting/monoscript/fileName/WaitForRestartFinish.cs: c5a146c5b1d306e0748cbca9592361f1 -> 0e76bf389cf347a5d8d6432ec661895f
+  custom:scripting/monoscript/fileName/KHRSimpleControllerProfile.cs: 3b25cc37f550e18bd565ed99a4735dab -> bcdcb81587b2075f7af2f75706b9e69a
+  custom:scripting/monoscript/fileName/OpenXRBuildProcessor.cs: 78ee5da2c331be8992399c1b88b44da9 -> 48dc0e114f75799c0d74bafe70808189
+  custom:scripting/monoscript/fileName/OpenXRFeatureInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/DPadInteractionCustomEditor.cs: 99cd61b34a13338ccbcfea9c8d6abe5b -> d93785eeae2b4d41d39f603bd6f9849d
+  custom:scripting/monoscript/fileName/OpenXRSpaceSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/ConformanceAutomationFeature.cs: cecaa95652b5ef8cb218b1dba74d83f1 -> 97112e825fad9ed87f6a9c7acc231c0b
+  custom:scripting/monoscript/fileName/OpenXRLoaderInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/FeatureHelpers.cs: 04ad13b1b8191b392f3bd1df6ddd9271 -> 0e8d07707daeed1da30b1605e903226b
+  custom:scripting/monoscript/fileName/DebuggerState.cs: 9e1dc0a50db973559c612ce1e515d668 -> 41070b7a08cc178a9ea51324cdaf5b81
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/OpenXRHmd.cs: be9ba1f914b0ca630d830f312e55d947 -> 1624687aa096b40d58d149d9c6304cca
+  custom:scripting/monoscript/fileName/OpenXRMangementSettings.cs: 92bd940a5b14de9463a17a42849426eb -> 5a013b6c45b1e1d06085cb1496493b86
+  custom:scripting/monoscript/fileName/OculusTouchControllerProfile.cs: 30174fa0cf36f963f4ec71c1aeb12f39 -> 03df51b5c781d1980f509408bae72bc8
+  custom:scripting/monoscript/fileName/OpenXRNativeTypes.cs: d5f77ef615de827e223bd481494fbeac -> 11be60823314f621c1b0bb94bf4fe744
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/KnownFeatureSets.cs: ef1e57626e9d494e608dd097a504d985 -> 2cf391597f07a52473981e9cc2b41b67
+  custom:scripting/monoscript/fileName/OpenXRProjectValidationRulesSetup.cs: 25e2d07ebf4abc51d6b13033f9d9631b -> 63c520149123eced22b6028c5ebd9d08
+  custom:scripting/monoscript/fileName/MicrosoftHandInteraction.cs: 4dc4abdfb772f525705d10e2a1807220 -> dac920740153b0163dda0f7e56920e40
+  custom:scripting/monoscript/fileName/RuntimeDebuggerWindow.cs: 410e78f6930c47a47f060ada0f65ea14 -> 0bc1d5ee7ce2553d42d62861471f3c44
+  custom:scripting/monoscript/fileName/PackageSettingsEditor.cs: 3d290d8387d6b7e9107e28c918b35a75 -> 6212fddebb8f67c4da0f50592230839b
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/OpenXRLoader.cs: 0a390cb75d019256a3fc204102cb314c -> 2a03893d4aa4b960c2f49090b4b03a7b
+  custom:scripting/monoscript/fileName/ValveIndexControllerProfile.cs: dcb1a84c7641748e3dbe495d3f7fcacd -> f923b1771c835a70375d3505e818878d
+  custom:scripting/monoscript/fileName/OculusQuestFeatureEditor.cs: caa2240a357715777809c1e155d7fcfc -> af70b82209b4cf6ce20a2da2892dfc5f
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/OpenXRChooseRuntimeLibraries.cs: 310f73dd2546cb472dfd9dd2b709f43e -> 3923c2f1337a35d737ad0192eb46b432
+  custom:scripting/monoscript/fileName/OculusQuestFeature.cs: f4ac8316c0f32dfaffd8fcb19bf24db7 -> 041c3418dd65b8e99ca410c708996814
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetManager.cs: 4e048d6bab7aae2619fe673806cc6ebf -> 4f340a53d115a7e1888d00ddc4cd614b
+  custom:scripting/monoscript/fileName/OpenXRColorSubmissonModeList.cs: c5c371b3c10ce050fcca3ce0bbdf4109 -> 62c3c48199b3c893ece86757b75b0604
+  custom:scripting/monoscript/fileName/OpenXRUtility.cs: c9c08bfbdacbe0dd33e419d1d82db65a -> af9b8bca68ffa2bc69f78ec0da9cf1fd
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/MockRuntime.cs: 4707e1b72a1c680c9bca910cce99580c -> 8e970d93da4762c7d57e9c9dd2b36dbb
+  custom:scripting/monoscript/fileName/OpenXRDevice.cs: f3c3823f4956568d1e9728f978cdcf7b -> 1b3be9b024fb29351711164fb0577202
+  custom:scripting/monoscript/fileName/OpenXRUnityAPI.cs: 45bb7e1c3ff6f74b6c2cddf5d0db4aef -> 95d0f03221767acb8a4a43279af12154
+  custom:scripting/monoscript/fileName/HTCViveControllerProfile.cs: 68cbea6a75bb808962ef4679852274fe -> 575b921c71649e99576a05f0add9cf5d
+  custom:scripting/monoscript/fileName/BootConfigBuilder.cs: 80cbd1d6b38400b696adb897e5751311 -> a174d8870c7a69fabc7d42a75b0f23aa
+  custom:scripting/monoscript/fileName/OpenXRRenderSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/EyeGazeInteraction.cs: df93ecad6ff84040ea811a409734aecf -> dc1f12620c8656649cfc16f13969f5fa
+  custom:scripting/monoscript/fileName/OpenXRAnalytics.cs: cd04f750fae989b24a13eb8b7fc568c7 -> 67d5de80ae8e3ee46bb1b4907783d54c
+  custom:scripting/monoscript/fileName/MicrosoftMotionControllerProfile.cs: 047322156082fa203c5ec2a3d6b58d79 -> 6dcaa2067404bed7771687f2f9dfa057
+  custom:scripting/monoscript/fileName/OpenXRRestarter.cs: 42c4a284fa4bc016f7554a7523fe6083 -> c236f3f43c026f409512d203b81e6184
+  custom:scripting/monoscript/fileName/OpenXRFeatureAttribute.cs: 5c95bca3ecb995bf54767d3bdb396139 -> 99305d666df750d87e7264e3c7ae4f2a
+  custom:scripting/monoscript/fileName/OpenXRLoaderNoPreInit.cs: 7ea37fe40035155d109f06ed1e31bdc0 -> 8f7a064e1e0bb6e17b9f5d171fe53dfc
+  custom:scripting/monoscript/fileName/HandCommonPosesInteraction.cs: a9ba4ac130365bd9a98d3249459ad095 -> c984aa78f460c3bf39ec56bc9a0a414a
+  custom:scripting/monoscript/fileName/OpenXRDiagnosticReport.cs: 81b79e6d53653bad181c2294c861dd29 -> f43e8307d90025ed39c346ed63d1208d
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeatureEditor.cs: 78d558165618d978f07c916ce9e6e2f5 -> 26a9be57964b520d3a47d8c20db877e9
+  custom:scripting/monoscript/fileName/PoseControl.cs: 609dfc7c8c05a1cf200909bbac757fec -> 4ff0d325328ef40fb1693e34ac3358bf
+  custom:scripting/monoscript/fileName/OpenXRFeatureBuildHooks.cs: 1710c5d7a8e48075c9e4aff8b45f1152 -> da31756dd3c74e69bcd7ed1a1983ed53
+  custom:scripting/monoscript/fileName/HPReverbG2ControllerProfile.cs: 9d8499f0c7d25c6b81dc777a2c71df61 -> 6aadb5e22feaccfa77ef6db6c4d4541c
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/BootConfig.cs: 24b01b5e4e987a969a9c22c0ebea884d -> b2c4d54615a39b14509e601dd0f329ff
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsFeature.cs: 3bba6683d3988347de546d285dd94964 -> d323744d9bc61085862cbc785e1f985c
+  custom:scripting/monoscript/fileName/OpenXRPackageSettings.cs: b11fb0112aeb128e201271bf06e53e96 -> 4f4aaba453bf105fb1c3c3d64247142d
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestMeta.cs: 0665e52998c0deb3bd8028395f9cc405 -> 3b920058e4dd8cbdb95cce4af271f981
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetAttribute.cs: 984b4e8e6598cf2b759dd56f021485ae -> 9e20f05fe0a3688af8836175869f0bb7
+  custom:scripting/monoscript/fileName/FoveatedRenderingFeature.cs: 0e86c0901bc27e397ae214482da57354 -> 3cd591174f2fee5d1b0d6a1875383a9b
+  custom:scripting/monoscript/fileName/HapticControl.cs: 81ffcc968c7774530b274658fb3c363b -> d7a5389cafde2a1337c58e2f0d91a837
+  custom:scripting/monoscript/fileName/MetaQuestFeature.cs: 3ce83f71782e0ea75b31e962ea3efa0c -> b9c317336250afc5bb5fa2c2df269ea6
+  custom:scripting/monoscript/fileName/OpenXRRuntimeSelector.cs: 7e0d7dbc5dab41d73648ca1f9f1a98b5 -> 929d3ce28c815a19c6c335174420bf6b
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsTypes.cs: 48ea32296967fd5d34af1b09b2b71daf -> 5bc9c5b4646eff91646254ce341c6683
+  custom:scripting/monoscript/fileName/OpenXRFeatureEditor.cs: 80fd68feb25104575fb2fab5d957091c -> 01dd3fecc4e9c7ce9fb6af5d0948ba2a
+  custom:scripting/monoscript/fileName/BuildHelperUtils.cs: 8328d1d9a38e1eb013b8e145e6eaf5e2 -> 619773c3d1b7f3f0ca7461f5c27242a8
+  custom:scripting/monoscript/fileName/HandInteractionProfile.cs: 0d2aed2831986eac6f8f9aa17828b9d5 -> 9c7649bd495ee99cc73ddacbe0a8cd95
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestOculus.cs: fb2d868358b34027ef7bebd7c414bb6f -> 1d09740e7edd66fffc5895aae9e385d3
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeature.cs: ca724df07df4d3ac84a3c339b29d867a -> 8b269b64ad1c99e85d7f28185c15f7bb
+  custom:scripting/monoscript/fileName/MetaQuestFeatureBuildHooks.cs: 9faef18f7993e6e1073d79300a2378de -> 2ac755c66ffd4e4b7c22530386a7ba47
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: e813d9c34fda2b2a1d64026f9c02d35e -> a45dfad96fe2dd15398ab47dea74b3b7
+  custom:scripting/monoscript/fileName/OpenXRInput.cs: 22c2d7f1ec78d2a3229acc23c316aa56 -> b351db87f98ee399e568b78e0ed353e3
+  custom:scripting/monoscript/fileName/OpenXRInteractionFeature.cs: cdbb80131a5413ae3319d169bec27823 -> a60484418ad6b497996467bb6f98db73
+  custom:scripting/monoscript/fileName/OpenXREditorSettings.cs: 2445cd97d9c83a89667b220edba88001 -> 321e3a8126bc4b0248cbcecf63892f31
+  custom:scripting/monoscript/fileName/OpenXRProjectValidation.cs: b212a865ce6bc0eec7aa584eb24e0320 -> 181508e149a91a64c6dfdc447b97c322
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.765 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.876 seconds
+Domain Reload Profiling: 2636ms
+	BeginReloadAssembly (218ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (445ms)
+		LoadAssemblies (524ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (35ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (1877ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (998ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (121ms)
+			ProcessInitializeOnLoadAttributes (714ms)
+			ProcessInitializeOnLoadMethodAttributes (119ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 39.44 ms, found 15 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5888 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 98 unused Assets / (1.9 MB). Loaded Objects now: 6406.
+Memory consumption went from 188.7 MB to 186.8 MB.
+Total: 15.932400 ms (FindLiveObjects: 1.279600 ms CreateObjectMapping: 2.277700 ms MarkObjects: 8.961800 ms  DeleteObjects: 3.411800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/MagnetometerCompass.cs: 0b09d914ed53314ba4b7d98021643620 -> 
+  custom:scripting/monoscript/fileName/DPadInteraction.cs: 95e73fe253040182d7d3a72946b178f3 -> 93f85c8ba74c4199c8fc9b6e8c6fb8a6
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettingsEditor.cs: 432d4287b2c032d3f57733ec7a14ca52 -> 46f7bc9b6667349416d592c92274a2cd
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/UWPCoreWindowBuildHooks.cs: 83747187b120078555c0394b9a9b0ce0 -> 528ee0545204f8083d130ec04efc78bc
+  custom:scripting/monoscript/fileName/MetaQuestFeatureEditor.cs: acb175f41678fa8897fabd924791b0e7 -> fff340053bb2e94334d0d5989f2eb349
+  custom:scripting/monoscript/fileName/PalmPoseInteraction.cs: d1ed093e68224e5cc45274e3ae6adc1c -> 6bd25b6029acb9127f25748cb0b6d2a8
+  custom:scripting/monoscript/fileName/MetaQuestTouchPlusControllerProfile.cs: 4e520896c61257b66b72a7db8b275278 -> 4b9439e11567c27c85546e11bafeabe7
+  custom:scripting/monoscript/fileName/OpenXRRuntime.cs: 41cdbd5bfbc4a71a3067e813237075c2 -> c3a00f9ce6a0283dcb391b83637adf44
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/MetaQuestTouchProControllerProfile.cs: 924a0a20cbec88241d3a6560225c517c -> 9fffae235d4c14901711127c7daeb86c
+  custom:scripting/monoscript/fileName/OpenXRConstants.cs: 62bb241e63691239607e98a1eb79e80e -> f878d042bd3999b796b9387b0c8a1032
+  custom:scripting/monoscript/fileName/OpenXRFeatureUICommon.cs: 461800e5238100664aadc5872df93167 -> 45f7a59cd9c5cd84e28e0f7a429879c2
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/OpenXRLoaderUI.cs: 9a80d2e453353745eb2f0dd55330d851 -> ebd8d704d5e26f054d43886c272cd005
+  custom:scripting/monoscript/fileName/WaitForRestartFinish.cs: c5a146c5b1d306e0748cbca9592361f1 -> 0e76bf389cf347a5d8d6432ec661895f
+  custom:scripting/monoscript/fileName/KHRSimpleControllerProfile.cs: 3b25cc37f550e18bd565ed99a4735dab -> bcdcb81587b2075f7af2f75706b9e69a
+  custom:scripting/monoscript/fileName/OpenXRBuildProcessor.cs: 78ee5da2c331be8992399c1b88b44da9 -> 48dc0e114f75799c0d74bafe70808189
+  custom:scripting/monoscript/fileName/OpenXRFeatureInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/DPadInteractionCustomEditor.cs: 99cd61b34a13338ccbcfea9c8d6abe5b -> d93785eeae2b4d41d39f603bd6f9849d
+  custom:scripting/monoscript/fileName/OpenXRSpaceSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/ConformanceAutomationFeature.cs: cecaa95652b5ef8cb218b1dba74d83f1 -> 97112e825fad9ed87f6a9c7acc231c0b
+  custom:scripting/monoscript/fileName/OpenXRLoaderInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/FeatureHelpers.cs: 04ad13b1b8191b392f3bd1df6ddd9271 -> 0e8d07707daeed1da30b1605e903226b
+  custom:scripting/monoscript/fileName/DebuggerState.cs: 9e1dc0a50db973559c612ce1e515d668 -> 41070b7a08cc178a9ea51324cdaf5b81
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/OpenXRHmd.cs: be9ba1f914b0ca630d830f312e55d947 -> 1624687aa096b40d58d149d9c6304cca
+  custom:scripting/monoscript/fileName/OpenXRMangementSettings.cs: 92bd940a5b14de9463a17a42849426eb -> 5a013b6c45b1e1d06085cb1496493b86
+  custom:scripting/monoscript/fileName/OculusTouchControllerProfile.cs: 30174fa0cf36f963f4ec71c1aeb12f39 -> 03df51b5c781d1980f509408bae72bc8
+  custom:scripting/monoscript/fileName/OpenXRNativeTypes.cs: d5f77ef615de827e223bd481494fbeac -> 11be60823314f621c1b0bb94bf4fe744
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/KnownFeatureSets.cs: ef1e57626e9d494e608dd097a504d985 -> 2cf391597f07a52473981e9cc2b41b67
+  custom:scripting/monoscript/fileName/OpenXRProjectValidationRulesSetup.cs: 25e2d07ebf4abc51d6b13033f9d9631b -> 63c520149123eced22b6028c5ebd9d08
+  custom:scripting/monoscript/fileName/MicrosoftHandInteraction.cs: 4dc4abdfb772f525705d10e2a1807220 -> dac920740153b0163dda0f7e56920e40
+  custom:scripting/monoscript/fileName/RuntimeDebuggerWindow.cs: 410e78f6930c47a47f060ada0f65ea14 -> 0bc1d5ee7ce2553d42d62861471f3c44
+  custom:scripting/monoscript/fileName/PackageSettingsEditor.cs: 3d290d8387d6b7e9107e28c918b35a75 -> 6212fddebb8f67c4da0f50592230839b
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/OpenXRLoader.cs: 0a390cb75d019256a3fc204102cb314c -> 2a03893d4aa4b960c2f49090b4b03a7b
+  custom:scripting/monoscript/fileName/ValveIndexControllerProfile.cs: dcb1a84c7641748e3dbe495d3f7fcacd -> f923b1771c835a70375d3505e818878d
+  custom:scripting/monoscript/fileName/OculusQuestFeatureEditor.cs: caa2240a357715777809c1e155d7fcfc -> af70b82209b4cf6ce20a2da2892dfc5f
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/OpenXRChooseRuntimeLibraries.cs: 310f73dd2546cb472dfd9dd2b709f43e -> 3923c2f1337a35d737ad0192eb46b432
+  custom:scripting/monoscript/fileName/OculusQuestFeature.cs: f4ac8316c0f32dfaffd8fcb19bf24db7 -> 041c3418dd65b8e99ca410c708996814
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetManager.cs: 4e048d6bab7aae2619fe673806cc6ebf -> 4f340a53d115a7e1888d00ddc4cd614b
+  custom:scripting/monoscript/fileName/OpenXRColorSubmissonModeList.cs: c5c371b3c10ce050fcca3ce0bbdf4109 -> 62c3c48199b3c893ece86757b75b0604
+  custom:scripting/monoscript/fileName/OpenXRUtility.cs: c9c08bfbdacbe0dd33e419d1d82db65a -> af9b8bca68ffa2bc69f78ec0da9cf1fd
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/MockRuntime.cs: 4707e1b72a1c680c9bca910cce99580c -> 8e970d93da4762c7d57e9c9dd2b36dbb
+  custom:scripting/monoscript/fileName/OpenXRDevice.cs: f3c3823f4956568d1e9728f978cdcf7b -> 1b3be9b024fb29351711164fb0577202
+  custom:scripting/monoscript/fileName/OpenXRUnityAPI.cs: 45bb7e1c3ff6f74b6c2cddf5d0db4aef -> 95d0f03221767acb8a4a43279af12154
+  custom:scripting/monoscript/fileName/HTCViveControllerProfile.cs: 68cbea6a75bb808962ef4679852274fe -> 575b921c71649e99576a05f0add9cf5d
+  custom:scripting/monoscript/fileName/BootConfigBuilder.cs: 80cbd1d6b38400b696adb897e5751311 -> a174d8870c7a69fabc7d42a75b0f23aa
+  custom:scripting/monoscript/fileName/OpenXRRenderSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/EyeGazeInteraction.cs: df93ecad6ff84040ea811a409734aecf -> dc1f12620c8656649cfc16f13969f5fa
+  custom:scripting/monoscript/fileName/OpenXRAnalytics.cs: cd04f750fae989b24a13eb8b7fc568c7 -> 67d5de80ae8e3ee46bb1b4907783d54c
+  custom:scripting/monoscript/fileName/MicrosoftMotionControllerProfile.cs: 047322156082fa203c5ec2a3d6b58d79 -> 6dcaa2067404bed7771687f2f9dfa057
+  custom:scripting/monoscript/fileName/OpenXRRestarter.cs: 42c4a284fa4bc016f7554a7523fe6083 -> c236f3f43c026f409512d203b81e6184
+  custom:scripting/monoscript/fileName/OpenXRFeatureAttribute.cs: 5c95bca3ecb995bf54767d3bdb396139 -> 99305d666df750d87e7264e3c7ae4f2a
+  custom:scripting/monoscript/fileName/OpenXRLoaderNoPreInit.cs: 7ea37fe40035155d109f06ed1e31bdc0 -> 8f7a064e1e0bb6e17b9f5d171fe53dfc
+  custom:scripting/monoscript/fileName/HandCommonPosesInteraction.cs: a9ba4ac130365bd9a98d3249459ad095 -> c984aa78f460c3bf39ec56bc9a0a414a
+  custom:scripting/monoscript/fileName/OpenXRDiagnosticReport.cs: 81b79e6d53653bad181c2294c861dd29 -> f43e8307d90025ed39c346ed63d1208d
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeatureEditor.cs: 78d558165618d978f07c916ce9e6e2f5 -> 26a9be57964b520d3a47d8c20db877e9
+  custom:scripting/monoscript/fileName/PoseControl.cs: 609dfc7c8c05a1cf200909bbac757fec -> 4ff0d325328ef40fb1693e34ac3358bf
+  custom:scripting/monoscript/fileName/OpenXRFeatureBuildHooks.cs: 1710c5d7a8e48075c9e4aff8b45f1152 -> da31756dd3c74e69bcd7ed1a1983ed53
+  custom:scripting/monoscript/fileName/HPReverbG2ControllerProfile.cs: 9d8499f0c7d25c6b81dc777a2c71df61 -> 6aadb5e22feaccfa77ef6db6c4d4541c
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/BootConfig.cs: 24b01b5e4e987a969a9c22c0ebea884d -> b2c4d54615a39b14509e601dd0f329ff
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsFeature.cs: 3bba6683d3988347de546d285dd94964 -> d323744d9bc61085862cbc785e1f985c
+  custom:scripting/monoscript/fileName/OpenXRPackageSettings.cs: b11fb0112aeb128e201271bf06e53e96 -> 4f4aaba453bf105fb1c3c3d64247142d
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestMeta.cs: 0665e52998c0deb3bd8028395f9cc405 -> 3b920058e4dd8cbdb95cce4af271f981
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetAttribute.cs: 984b4e8e6598cf2b759dd56f021485ae -> 9e20f05fe0a3688af8836175869f0bb7
+  custom:scripting/monoscript/fileName/FoveatedRenderingFeature.cs: 0e86c0901bc27e397ae214482da57354 -> 3cd591174f2fee5d1b0d6a1875383a9b
+  custom:scripting/monoscript/fileName/HapticControl.cs: 81ffcc968c7774530b274658fb3c363b -> d7a5389cafde2a1337c58e2f0d91a837
+  custom:scripting/monoscript/fileName/MetaQuestFeature.cs: 3ce83f71782e0ea75b31e962ea3efa0c -> b9c317336250afc5bb5fa2c2df269ea6
+  custom:scripting/monoscript/fileName/OpenXRRuntimeSelector.cs: 7e0d7dbc5dab41d73648ca1f9f1a98b5 -> 929d3ce28c815a19c6c335174420bf6b
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsTypes.cs: 48ea32296967fd5d34af1b09b2b71daf -> 5bc9c5b4646eff91646254ce341c6683
+  custom:scripting/monoscript/fileName/OpenXRFeatureEditor.cs: 80fd68feb25104575fb2fab5d957091c -> 01dd3fecc4e9c7ce9fb6af5d0948ba2a
+  custom:scripting/monoscript/fileName/BuildHelperUtils.cs: 8328d1d9a38e1eb013b8e145e6eaf5e2 -> 619773c3d1b7f3f0ca7461f5c27242a8
+  custom:scripting/monoscript/fileName/HandInteractionProfile.cs: 0d2aed2831986eac6f8f9aa17828b9d5 -> 9c7649bd495ee99cc73ddacbe0a8cd95
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestOculus.cs: fb2d868358b34027ef7bebd7c414bb6f -> 1d09740e7edd66fffc5895aae9e385d3
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeature.cs: ca724df07df4d3ac84a3c339b29d867a -> 8b269b64ad1c99e85d7f28185c15f7bb
+  custom:scripting/monoscript/fileName/MetaQuestFeatureBuildHooks.cs: 9faef18f7993e6e1073d79300a2378de -> 2ac755c66ffd4e4b7c22530386a7ba47
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: e813d9c34fda2b2a1d64026f9c02d35e -> a45dfad96fe2dd15398ab47dea74b3b7
+  custom:scripting/monoscript/fileName/OpenXRInput.cs: 22c2d7f1ec78d2a3229acc23c316aa56 -> b351db87f98ee399e568b78e0ed353e3
+  custom:scripting/monoscript/fileName/OpenXRInteractionFeature.cs: cdbb80131a5413ae3319d169bec27823 -> a60484418ad6b497996467bb6f98db73
+  custom:scripting/monoscript/fileName/OpenXREditorSettings.cs: 2445cd97d9c83a89667b220edba88001 -> 321e3a8126bc4b0248cbcecf63892f31
+  custom:scripting/monoscript/fileName/OpenXRProjectValidation.cs: b212a865ce6bc0eec7aa584eb24e0320 -> 181508e149a91a64c6dfdc447b97c322
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.793 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.855 seconds
+Domain Reload Profiling: 2642ms
+	BeginReloadAssembly (216ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (452ms)
+		LoadAssemblies (538ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (32ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1856ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (970ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (127ms)
+			ProcessInitializeOnLoadAttributes (668ms)
+			ProcessInitializeOnLoadMethodAttributes (134ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 46.44 ms, found 15 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5888 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 98 unused Assets / (1.9 MB). Loaded Objects now: 6410.
+Memory consumption went from 188.7 MB to 186.8 MB.
+Total: 18.093800 ms (FindLiveObjects: 2.159500 ms CreateObjectMapping: 1.382000 ms MarkObjects: 11.929300 ms  DeleteObjects: 2.617600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/MagnetometerCompass.cs: 0b09d914ed53314ba4b7d98021643620 -> 
+  custom:scripting/monoscript/fileName/DPadInteraction.cs: 95e73fe253040182d7d3a72946b178f3 -> 93f85c8ba74c4199c8fc9b6e8c6fb8a6
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettingsEditor.cs: 432d4287b2c032d3f57733ec7a14ca52 -> 46f7bc9b6667349416d592c92274a2cd
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/UWPCoreWindowBuildHooks.cs: 83747187b120078555c0394b9a9b0ce0 -> 528ee0545204f8083d130ec04efc78bc
+  custom:scripting/monoscript/fileName/MetaQuestFeatureEditor.cs: acb175f41678fa8897fabd924791b0e7 -> fff340053bb2e94334d0d5989f2eb349
+  custom:scripting/monoscript/fileName/PalmPoseInteraction.cs: d1ed093e68224e5cc45274e3ae6adc1c -> 6bd25b6029acb9127f25748cb0b6d2a8
+  custom:scripting/monoscript/fileName/MetaQuestTouchPlusControllerProfile.cs: 4e520896c61257b66b72a7db8b275278 -> 4b9439e11567c27c85546e11bafeabe7
+  custom:scripting/monoscript/fileName/OpenXRRuntime.cs: 41cdbd5bfbc4a71a3067e813237075c2 -> c3a00f9ce6a0283dcb391b83637adf44
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/MetaQuestTouchProControllerProfile.cs: 924a0a20cbec88241d3a6560225c517c -> 9fffae235d4c14901711127c7daeb86c
+  custom:scripting/monoscript/fileName/OpenXRConstants.cs: 62bb241e63691239607e98a1eb79e80e -> f878d042bd3999b796b9387b0c8a1032
+  custom:scripting/monoscript/fileName/OpenXRFeatureUICommon.cs: 461800e5238100664aadc5872df93167 -> 45f7a59cd9c5cd84e28e0f7a429879c2
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/OpenXRLoaderUI.cs: 9a80d2e453353745eb2f0dd55330d851 -> ebd8d704d5e26f054d43886c272cd005
+  custom:scripting/monoscript/fileName/WaitForRestartFinish.cs: c5a146c5b1d306e0748cbca9592361f1 -> 0e76bf389cf347a5d8d6432ec661895f
+  custom:scripting/monoscript/fileName/KHRSimpleControllerProfile.cs: 3b25cc37f550e18bd565ed99a4735dab -> bcdcb81587b2075f7af2f75706b9e69a
+  custom:scripting/monoscript/fileName/OpenXRBuildProcessor.cs: 78ee5da2c331be8992399c1b88b44da9 -> 48dc0e114f75799c0d74bafe70808189
+  custom:scripting/monoscript/fileName/OpenXRFeatureInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/OpenXRFeatureSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/DPadInteractionCustomEditor.cs: 99cd61b34a13338ccbcfea9c8d6abe5b -> d93785eeae2b4d41d39f603bd6f9849d
+  custom:scripting/monoscript/fileName/OpenXRSpaceSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/ConformanceAutomationFeature.cs: cecaa95652b5ef8cb218b1dba74d83f1 -> 97112e825fad9ed87f6a9c7acc231c0b
+  custom:scripting/monoscript/fileName/OpenXRLoaderInternal.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/FeatureHelpers.cs: 04ad13b1b8191b392f3bd1df6ddd9271 -> 0e8d07707daeed1da30b1605e903226b
+  custom:scripting/monoscript/fileName/DebuggerState.cs: 9e1dc0a50db973559c612ce1e515d668 -> 41070b7a08cc178a9ea51324cdaf5b81
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/OpenXRHmd.cs: be9ba1f914b0ca630d830f312e55d947 -> 1624687aa096b40d58d149d9c6304cca
+  custom:scripting/monoscript/fileName/OpenXRMangementSettings.cs: 92bd940a5b14de9463a17a42849426eb -> 5a013b6c45b1e1d06085cb1496493b86
+  custom:scripting/monoscript/fileName/OculusTouchControllerProfile.cs: 30174fa0cf36f963f4ec71c1aeb12f39 -> 03df51b5c781d1980f509408bae72bc8
+  custom:scripting/monoscript/fileName/OpenXRNativeTypes.cs: d5f77ef615de827e223bd481494fbeac -> 11be60823314f621c1b0bb94bf4fe744
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/KnownFeatureSets.cs: ef1e57626e9d494e608dd097a504d985 -> 2cf391597f07a52473981e9cc2b41b67
+  custom:scripting/monoscript/fileName/OpenXRProjectValidationRulesSetup.cs: 25e2d07ebf4abc51d6b13033f9d9631b -> 63c520149123eced22b6028c5ebd9d08
+  custom:scripting/monoscript/fileName/MicrosoftHandInteraction.cs: 4dc4abdfb772f525705d10e2a1807220 -> dac920740153b0163dda0f7e56920e40
+  custom:scripting/monoscript/fileName/RuntimeDebuggerWindow.cs: 410e78f6930c47a47f060ada0f65ea14 -> 0bc1d5ee7ce2553d42d62861471f3c44
+  custom:scripting/monoscript/fileName/PackageSettingsEditor.cs: 3d290d8387d6b7e9107e28c918b35a75 -> 6212fddebb8f67c4da0f50592230839b
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/OpenXRLoader.cs: 0a390cb75d019256a3fc204102cb314c -> 2a03893d4aa4b960c2f49090b4b03a7b
+  custom:scripting/monoscript/fileName/ValveIndexControllerProfile.cs: dcb1a84c7641748e3dbe495d3f7fcacd -> f923b1771c835a70375d3505e818878d
+  custom:scripting/monoscript/fileName/OculusQuestFeatureEditor.cs: caa2240a357715777809c1e155d7fcfc -> af70b82209b4cf6ce20a2da2892dfc5f
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/OpenXRChooseRuntimeLibraries.cs: 310f73dd2546cb472dfd9dd2b709f43e -> 3923c2f1337a35d737ad0192eb46b432
+  custom:scripting/monoscript/fileName/OculusQuestFeature.cs: f4ac8316c0f32dfaffd8fcb19bf24db7 -> 041c3418dd65b8e99ca410c708996814
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetManager.cs: 4e048d6bab7aae2619fe673806cc6ebf -> 4f340a53d115a7e1888d00ddc4cd614b
+  custom:scripting/monoscript/fileName/OpenXRColorSubmissonModeList.cs: c5c371b3c10ce050fcca3ce0bbdf4109 -> 62c3c48199b3c893ece86757b75b0604
+  custom:scripting/monoscript/fileName/OpenXRUtility.cs: c9c08bfbdacbe0dd33e419d1d82db65a -> af9b8bca68ffa2bc69f78ec0da9cf1fd
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/MockRuntime.cs: 4707e1b72a1c680c9bca910cce99580c -> 8e970d93da4762c7d57e9c9dd2b36dbb
+  custom:scripting/monoscript/fileName/OpenXRDevice.cs: f3c3823f4956568d1e9728f978cdcf7b -> 1b3be9b024fb29351711164fb0577202
+  custom:scripting/monoscript/fileName/OpenXRUnityAPI.cs: 45bb7e1c3ff6f74b6c2cddf5d0db4aef -> 95d0f03221767acb8a4a43279af12154
+  custom:scripting/monoscript/fileName/HTCViveControllerProfile.cs: 68cbea6a75bb808962ef4679852274fe -> 575b921c71649e99576a05f0add9cf5d
+  custom:scripting/monoscript/fileName/BootConfigBuilder.cs: 80cbd1d6b38400b696adb897e5751311 -> a174d8870c7a69fabc7d42a75b0f23aa
+  custom:scripting/monoscript/fileName/OpenXRRenderSettings.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/EyeGazeInteraction.cs: df93ecad6ff84040ea811a409734aecf -> dc1f12620c8656649cfc16f13969f5fa
+  custom:scripting/monoscript/fileName/OpenXRAnalytics.cs: cd04f750fae989b24a13eb8b7fc568c7 -> 67d5de80ae8e3ee46bb1b4907783d54c
+  custom:scripting/monoscript/fileName/MicrosoftMotionControllerProfile.cs: 047322156082fa203c5ec2a3d6b58d79 -> 6dcaa2067404bed7771687f2f9dfa057
+  custom:scripting/monoscript/fileName/OpenXRRestarter.cs: 42c4a284fa4bc016f7554a7523fe6083 -> c236f3f43c026f409512d203b81e6184
+  custom:scripting/monoscript/fileName/OpenXRFeatureAttribute.cs: 5c95bca3ecb995bf54767d3bdb396139 -> 99305d666df750d87e7264e3c7ae4f2a
+  custom:scripting/monoscript/fileName/OpenXRLoaderNoPreInit.cs: 7ea37fe40035155d109f06ed1e31bdc0 -> 8f7a064e1e0bb6e17b9f5d171fe53dfc
+  custom:scripting/monoscript/fileName/HandCommonPosesInteraction.cs: a9ba4ac130365bd9a98d3249459ad095 -> c984aa78f460c3bf39ec56bc9a0a414a
+  custom:scripting/monoscript/fileName/OpenXRDiagnosticReport.cs: 81b79e6d53653bad181c2294c861dd29 -> f43e8307d90025ed39c346ed63d1208d
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeatureEditor.cs: 78d558165618d978f07c916ce9e6e2f5 -> 26a9be57964b520d3a47d8c20db877e9
+  custom:scripting/monoscript/fileName/PoseControl.cs: 609dfc7c8c05a1cf200909bbac757fec -> 4ff0d325328ef40fb1693e34ac3358bf
+  custom:scripting/monoscript/fileName/OpenXRFeatureBuildHooks.cs: 1710c5d7a8e48075c9e4aff8b45f1152 -> da31756dd3c74e69bcd7ed1a1983ed53
+  custom:scripting/monoscript/fileName/HPReverbG2ControllerProfile.cs: 9d8499f0c7d25c6b81dc777a2c71df61 -> 6aadb5e22feaccfa77ef6db6c4d4541c
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/BootConfig.cs: 24b01b5e4e987a969a9c22c0ebea884d -> b2c4d54615a39b14509e601dd0f329ff
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsFeature.cs: 3bba6683d3988347de546d285dd94964 -> d323744d9bc61085862cbc785e1f985c
+  custom:scripting/monoscript/fileName/OpenXRPackageSettings.cs: b11fb0112aeb128e201271bf06e53e96 -> 4f4aaba453bf105fb1c3c3d64247142d
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestMeta.cs: 0665e52998c0deb3bd8028395f9cc405 -> 3b920058e4dd8cbdb95cce4af271f981
+  custom:scripting/monoscript/fileName/OpenXRFeatureSetAttribute.cs: 984b4e8e6598cf2b759dd56f021485ae -> 9e20f05fe0a3688af8836175869f0bb7
+  custom:scripting/monoscript/fileName/FoveatedRenderingFeature.cs: 0e86c0901bc27e397ae214482da57354 -> 3cd591174f2fee5d1b0d6a1875383a9b
+  custom:scripting/monoscript/fileName/HapticControl.cs: 81ffcc968c7774530b274658fb3c363b -> d7a5389cafde2a1337c58e2f0d91a837
+  custom:scripting/monoscript/fileName/MetaQuestFeature.cs: 3ce83f71782e0ea75b31e962ea3efa0c -> b9c317336250afc5bb5fa2c2df269ea6
+  custom:scripting/monoscript/fileName/OpenXRRuntimeSelector.cs: 7e0d7dbc5dab41d73648ca1f9f1a98b5 -> 929d3ce28c815a19c6c335174420bf6b
+  custom:scripting/monoscript/fileName/XrPerformanceSettingsTypes.cs: 48ea32296967fd5d34af1b09b2b71daf -> 5bc9c5b4646eff91646254ce341c6683
+  custom:scripting/monoscript/fileName/OpenXRFeatureEditor.cs: 80fd68feb25104575fb2fab5d957091c -> 01dd3fecc4e9c7ce9fb6af5d0948ba2a
+  custom:scripting/monoscript/fileName/BuildHelperUtils.cs: 8328d1d9a38e1eb013b8e145e6eaf5e2 -> 619773c3d1b7f3f0ca7461f5c27242a8
+  custom:scripting/monoscript/fileName/HandInteractionProfile.cs: 0d2aed2831986eac6f8f9aa17828b9d5 -> 9c7649bd495ee99cc73ddacbe0a8cd95
+  custom:scripting/monoscript/fileName/ModifyAndroidManifestOculus.cs: fb2d868358b34027ef7bebd7c414bb6f -> 1d09740e7edd66fffc5895aae9e385d3
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RuntimeDebuggerOpenXRFeature.cs: ca724df07df4d3ac84a3c339b29d867a -> 8b269b64ad1c99e85d7f28185c15f7bb
+  custom:scripting/monoscript/fileName/MetaQuestFeatureBuildHooks.cs: 9faef18f7993e6e1073d79300a2378de -> 2ac755c66ffd4e4b7c22530386a7ba47
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: e813d9c34fda2b2a1d64026f9c02d35e -> a45dfad96fe2dd15398ab47dea74b3b7
+  custom:scripting/monoscript/fileName/OpenXRInput.cs: 22c2d7f1ec78d2a3229acc23c316aa56 -> b351db87f98ee399e568b78e0ed353e3
+  custom:scripting/monoscript/fileName/OpenXRInteractionFeature.cs: cdbb80131a5413ae3319d169bec27823 -> a60484418ad6b497996467bb6f98db73
+  custom:scripting/monoscript/fileName/OpenXREditorSettings.cs: 2445cd97d9c83a89667b220edba88001 -> 321e3a8126bc4b0248cbcecf63892f31
+  custom:scripting/monoscript/fileName/OpenXRProjectValidation.cs: b212a865ce6bc0eec7aa584eb24e0320 -> 181508e149a91a64c6dfdc447b97c322

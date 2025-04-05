@@ -3,12 +3,11 @@ using UnityEngine.UI;
 using System;
 using System.Collections.Generic;
 
-/// <summary>
-/// Demonstrates using multiple nearest grid points for an IDW interpolation
-/// so that your test marker can smoothly position itself between grid markers.
-/// </summary>
 public class MapCoordinateOverlay : MonoBehaviour
 {
+    // Singleton instance
+    public static MapCoordinateOverlay Instance { get; private set; }
+
     [Header("Marker & Parent")]
     public GameObject markerPrefab;
     public RectTransform mapContent;
@@ -23,24 +22,44 @@ public class MapCoordinateOverlay : MonoBehaviour
     [Header("Inverse Distance Weighting Settings")]
     [Tooltip("Number of neighbors to use for IDW interpolation.")]
     public int kNeighbors = 4;
-
     [Tooltip("Power parameter for IDW. 1=linear, 2=square, etc.")]
     public float distancePower = 1f;
 
-    [Header("Test Marker Settings")]
-    public bool placeTestMarker = true;
-    public float testLat = 63.4f;
-    public float testLon = 10.4f;
+    [Header("GPS Data Source")]
+    [SerializeField] private GPSSocketClient gpsClient;
+    [Tooltip("Initial location until first GPS data arrives")]
+    public float initialLat = 63.4f;
+    public float initialLon = 10.4f;
 
     // The corners for top-left, top-right, bottom-left, bottom-right
-    // normalizedX=0 => x=-48, normalizedX=1 => x=16813
-    // normalizedY=0 => y=48,  normalizedY=1 => y=-12276
     private float leftX = -48f;
     private float rightX = 16813f;
     private float topY = 48f;
     private float bottomY = -12276f;
 
     private MapData mapData;
+
+    // Store the marker instance for real-time updates.
+    private RectTransform currentMarkerRT;
+
+    // Public property to expose the main marker
+    public RectTransform CurrentMarker
+    {
+        get { return currentMarkerRT; }
+    }
+
+    private void Awake()
+    {
+        // Set up singleton instance.
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
 
     void Start()
     {
@@ -53,12 +72,52 @@ public class MapCoordinateOverlay : MonoBehaviour
             PlaceAllGridMarkers();
         }
 
-        // 3) Optionally place a test marker at lat/lon using IDW
-        if (placeTestMarker)
+        // 3) Find GPS client if not assigned
+        if (gpsClient == null)
         {
-            PlaceMarkerAtLatLon(testLat, testLon);
-            Debug.Log($"Placed test marker at lat={testLat}, lon={testLon}");
+            gpsClient = FindObjectOfType<GPSSocketClient>();
+            if (gpsClient == null)
+            {
+                Debug.LogError("GPSSocketClient not found! No GPS updates will occur.");
+            }
+            else
+            {
+                // Subscribe to GPS updates
+                gpsClient.OnGPSDataUpdated += OnGPSDataReceived;
+                Debug.Log("Successfully connected to GPSSocketClient");
+            }
         }
+        else
+        {
+            // Subscribe to GPS updates
+            gpsClient.OnGPSDataUpdated += OnGPSDataReceived;
+        }
+
+        // 4) Create initial marker with default position
+        CreateOrUpdateMarker(initialLat, initialLon);
+        Debug.Log($"Placed initial marker at lat={initialLat}, lon={initialLon} - waiting for GPS data");
+    }
+
+    void OnDestroy()
+    {
+        // Unsubscribe from events when destroyed
+        if (gpsClient != null)
+        {
+            gpsClient.OnGPSDataUpdated -= OnGPSDataReceived;
+        }
+    }
+
+    private void OnGPSDataReceived(GPSData data)
+    {
+        if (!data.valid)
+        {
+            Debug.LogWarning("Received invalid GPS data");
+            return;
+        }
+
+        // Update using GPS data
+        CreateOrUpdateMarker(data.latitude, data.longitude);
+        Debug.Log($"Updated marker with GPS data: Lat={data.latitude}, Lon={data.longitude}");
     }
 
     private void LoadMapData()
@@ -80,14 +139,55 @@ public class MapCoordinateOverlay : MonoBehaviour
     }
 
     /// <summary>
-    /// Places a marker at the lat/lon by IDW interpolation of the k nearest grid points.
+    /// Creates or updates the marker based on latitude and longitude.
     /// </summary>
-    public void PlaceMarkerAtLatLon(float lat, float lon)
+    public void CreateOrUpdateMarker(float lat, float lon)
+    {
+        Vector2 unityPos = GetUnityPositionFromLatLon(lat, lon);
+
+        // If the marker already exists, update its position.
+        if (currentMarkerRT != null)
+        {
+            currentMarkerRT.anchoredPosition = unityPos;
+        }
+        else
+        {
+            // Instantiate the marker as a permanent object.
+            GameObject markerObj = Instantiate(markerPrefab, mapContent);
+            markerObj.SetActive(true);
+
+            currentMarkerRT = markerObj.GetComponent<RectTransform>();
+            if (currentMarkerRT != null)
+            {
+                currentMarkerRT.anchoredPosition = unityPos;
+            }
+            else
+            {
+                markerObj.transform.position = new Vector3(unityPos.x, unityPos.y, 0f);
+            }
+
+            // Force marker on top
+            Canvas markerCanvas = markerObj.GetComponent<Canvas>();
+            if (markerCanvas == null) markerCanvas = markerObj.AddComponent<Canvas>();
+            markerCanvas.overrideSorting = true;
+            markerCanvas.sortingOrder = 999;
+
+            Image img = markerObj.GetComponent<Image>();
+            if (img != null) img.enabled = true;
+        }
+
+        Debug.Log($"IDW => lat={lat}, lon={lon} => unity=({unityPos.x:F1},{unityPos.y:F1})");
+    }
+
+    /// <summary>
+    /// Returns the Unity position from latitude and longitude using IDW interpolation.
+    /// </summary>
+    private Vector2 GetUnityPositionFromLatLon(float lat, float lon)
     {
         if (mapData == null || mapData.grid == null)
         {
             Debug.LogError("No grid data loaded!");
-            return;
+            return Vector2.zero;
         }
 
         // 1) Get the k nearest neighbors in lat/lon space
@@ -97,11 +197,7 @@ public class MapCoordinateOverlay : MonoBehaviour
         Vector2 norm = InverseDistanceWeightedNormalized(lat, lon, neighbors, distancePower);
 
         // 3) Convert to Unity coords
-        Vector2 unityPos = ConvertNormalizedToUnity(norm.x, norm.y);
-
-        // 4) Instantiate the marker
-        Debug.Log($"IDW => lat={lat}, lon={lon} => norm=({norm.x:F3},{norm.y:F3}), unity=({unityPos.x:F1},{unityPos.y:F1})");
-        InstantiateMarker(unityPos);
+        return ConvertNormalizedToUnity(norm.x, norm.y);
     }
 
     /// <summary>
@@ -109,21 +205,15 @@ public class MapCoordinateOverlay : MonoBehaviour
     /// </summary>
     private List<GridPoint> FindKClosestNeighbors(float lat, float lon, int k)
     {
-        // We'll store (distance, gridPoint) pairs, then sort by distance.
         List<(float distSq, GridPoint gp)> distList = new List<(float, GridPoint)>(mapData.grid.Length);
-
         foreach (GridPoint gp in mapData.grid)
         {
             float dx = gp.lat - lat;
             float dy = gp.lon - lon;
-            float distSq = dx * dx + dy * dy; // squared distance
+            float distSq = dx * dx + dy * dy;
             distList.Add((distSq, gp));
         }
-
-        // Sort ascending by distSq
         distList.Sort((a, b) => a.distSq.CompareTo(b.distSq));
-
-        // Take the first k points
         List<GridPoint> result = new List<GridPoint>(k);
         for (int i = 0; i < k && i < distList.Count; i++)
         {
@@ -133,52 +223,48 @@ public class MapCoordinateOverlay : MonoBehaviour
     }
 
     /// <summary>
-    /// Performs inverse-distance weighting to get a single normalized (x,y)
-    /// from multiple neighbor points. If distance=0 for any neighbor, we short-circuit to that point.
+    /// Performs inverse-distance weighting to get a normalized (x,y) from neighbor points.
     /// </summary>
     private Vector2 InverseDistanceWeightedNormalized(float lat, float lon, List<GridPoint> neighbors, float power)
     {
-        float sumWeights = 0f;
-        float sumX = 0f;
-        float sumY = 0f;
-
+        float sumWeights = 0f, sumX = 0f, sumY = 0f;
         foreach (GridPoint gp in neighbors)
         {
             float dx = gp.lat - lat;
             float dy = gp.lon - lon;
             float dist = Mathf.Sqrt(dx * dx + dy * dy);
-
             if (dist < 1e-9f)
             {
-                // Exactly on a grid point, short-circuit
                 return new Vector2(gp.normalizedX, gp.normalizedY);
             }
-
-            // weight = 1 / dist^power
             float w = 1f / Mathf.Pow(dist, power);
             sumWeights += w;
             sumX += w * gp.normalizedX;
             sumY += w * gp.normalizedY;
         }
-
         if (sumWeights < 1e-12f)
         {
-            // fallback if something weird happens
             return new Vector2(neighbors[0].normalizedX, neighbors[0].normalizedY);
         }
-
-        float outX = sumX / sumWeights;
-        float outY = sumY / sumWeights;
-        return new Vector2(outX, outY);
+        return new Vector2(sumX / sumWeights, sumY / sumWeights);
     }
 
     /// <summary>
-    /// If you want to see all grid points, we skip some to avoid clutter.
+    /// Converts normalized coordinates [0..1] to Unity coordinates.
+    /// </summary>
+    private Vector2 ConvertNormalizedToUnity(float nx, float ny)
+    {
+        float x = Mathf.Lerp(leftX, rightX, nx);
+        float y = Mathf.Lerp(topY, bottomY, ny);
+        return new Vector2(x, y);
+    }
+
+    /// <summary>
+    /// Optionally places grid markers for visualization.
     /// </summary>
     private void PlaceAllGridMarkers()
     {
         if (mapData == null || mapData.grid == null) return;
-
         Debug.Log($"Placing grid markers for {mapData.grid.Length} points (skip={gridStep})...");
         for (int i = 0; i < mapData.grid.Length; i += gridStep)
         {
@@ -189,21 +275,8 @@ public class MapCoordinateOverlay : MonoBehaviour
     }
 
     /// <summary>
-    /// Converts normalized coords [0..1] to Unity coords for your map.
-    /// 0 => top/left, 1 => bottom/right.
-    /// So x=0 => leftX, x=1 => rightX
-    ///    y=0 => topY,  y=1 => bottomY
-    /// </summary>
-    private Vector2 ConvertNormalizedToUnity(float nx, float ny)
-    {
-        float x = Mathf.Lerp(leftX, rightX, nx);
-        float y = Mathf.Lerp(topY, bottomY, ny);
-        return new Vector2(x, y);
-    }
-
-    /// <summary>
-    /// Instantiates a marker in mapContent, sets its anchoredPosition,
-    /// and forces it to render on top by giving it a Canvas with a high sortingOrder.
+    /// Instantiates a marker at a given Unity coordinate.
+    /// This is used for placing additional waypoint markers.
     /// </summary>
     private void InstantiateMarker(Vector2 position)
     {
@@ -212,10 +285,8 @@ public class MapCoordinateOverlay : MonoBehaviour
             Debug.LogError("MarkerPrefab or mapContent not set!");
             return;
         }
-
         GameObject markerObj = Instantiate(markerPrefab, mapContent);
         markerObj.SetActive(true);
-
         RectTransform rt = markerObj.GetComponent<RectTransform>();
         if (rt != null)
         {
@@ -225,25 +296,22 @@ public class MapCoordinateOverlay : MonoBehaviour
         {
             markerObj.transform.position = new Vector3(position.x, position.y, 0f);
         }
-
-        // Force marker on top
         Canvas markerCanvas = markerObj.GetComponent<Canvas>();
         if (markerCanvas == null) markerCanvas = markerObj.AddComponent<Canvas>();
         markerCanvas.overrideSorting = true;
         markerCanvas.sortingOrder = 999;
-
         Image img = markerObj.GetComponent<Image>();
         if (img != null) img.enabled = true;
     }
 
     // JSON data classes
-    [System.Serializable]
+    [Serializable]
     public class MapData
     {
         public GridPoint[] grid;
     }
 
-    [System.Serializable]
+    [Serializable]
     public class GridPoint
     {
         public float normalizedX;
@@ -252,3 +320,4 @@ public class MapCoordinateOverlay : MonoBehaviour
         public float lon;
     }
 }
+
